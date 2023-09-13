@@ -1,0 +1,70 @@
+{
+    "productsData" : [
+        {
+            "image_url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_141_d277995b-31ae-420d-b5b4-1161515335ed.jpg?v=1687428689",
+            "keyLine": "42 Hours Playback",
+            "name": "Airdopes 141",
+            "price": "₹1,199",
+            "strikedoffprice": "₹4,490",
+            "off": "73%",
+            "featureOne": "Clear Calling",
+            "featureTwo": "ASAP™ Charge",
+            "category": "TWS"
+        },
+        {
+            "image_url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049",
+            "keyLine": "60 Hours Playback",
+            "name": "Airdopes 131",
+            "price": "₹999",
+            "strikedoffprice": "₹2,990",
+            "off": "67%",
+            "featureOne": "13mm drivers",
+            "featureTwo": "IWP Technology",
+            "category": "TWS"
+        },
+        {
+            "image_url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-Airdopes-Atom-83.jpg?v=1682576552",
+            "keyLine": "50 Hours Playback",
+            "name": "Airdopes Atom 83",
+            "price": "₹1,499",
+            "strikedoffprice": "₹3,490",
+            "off": "57%",
+            "featureOne": "13mm Drivers",
+            "featureTwo": "ASAP™ Charge",
+            "category": "TWS"
+        },
+        {
+            "image_url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_161.jpg?v=1686297917",
+            "keyLine": "17 Hours Playback",
+            "name": "Airdopes 161",
+            "price": "₹999",
+            "strikedoffprice": "₹2,490",
+            "off": "60%",
+            "featureOne": "ASAP™ Charge",
+            "featureTwo": "IWP Technology",
+            "category": "TWS"
+        },
+        {
+            "image_url": "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_161_Pro_49947db5-298c-40c7-94bc-072faaa427a7.jpg?v=1689920938",
+            "keyLine": "50 Hours Playback",
+            "name": "Airdopes 161 Pro",
+            "price": "₹1,199",
+            "strikedoffprice": "₹4,990",
+            "off": "76%",
+            "featureOne": "Bluetooth V5.3",
+            "featureTwo": "BEAST™ Mode",
+            "category": "TWS"
+        },
+        {
+            "image_url": "https://www.boat-lifestyle.com/cdn/shop/products/IM131-FI_Black01-PhotoRoom.png-PhotoRoom_300x.png?v=1674687289",
+            "keyLine": "42 Hours Playback",
+            "name": "Immortal 131",
+            "price": "₹1,599",
+            "strikedoffprice": "₹3,490",
+            "off": "54%",
+            "featureOne": "Up to 40 Hours Playback",
+            "featureTwo": "BEAST™ Mode",
+            "category": "TWS"
+        }
+    ]
+}
