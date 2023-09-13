@@ -3,28 +3,34 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 0px;
-    height: 799px;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Boat_Logo.webp/1200px-Boat_Logo.webp.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  /* background-size: cover; */
+    height: 803px;
+   
+   background-color: rgb(226, 215, 215);
 }
 #firstChildDiv{
     display: flex;
     flex-wrap: wrap;
     width: 350px;
-    height: 300px;
+    height: 550px;
     justify-content:center;
     text-align: center;
     align-items: center;
-    /* border: 1px solid black; */
+    background-color: rgb(188, 217, 228);
     box-shadow: 1px 1px 5px 1px rgb(151, 147, 147);
-    border-radius: 20px;
+    border-radius: 0px 10px 10px 0px;
+}
+#firstDiv{
+    width: 200px;
+    height: 550px;
+    border: 1px solid black;
+    background-color: rgb(235, 139, 13);
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 1px 1px 5px 1px rgb(83, 82, 82);
 }
 #firstChildDiv:hover{
-    background-color: grey;
+    /* background-color: rgb(253, 249, 249); */
 }
 #otpInput{
     text-align: center;
@@ -36,20 +42,22 @@
 #submit{
     width: 80px;
     height:30px;
-    margin-top: 5px;
+    margin-top: 30px;
     margin-bottom: 50px;
+    background-color: red;
+    border: 0px;
+    margin-bottom: 100px;
 }
 #submit:hover{
-    width: 80px;
-    height:30px;
-    margin-top: 5px;
-    margin-bottom: 50px;
-    color: green;
-    /* background-color: red; */
-    border: 0px;
+    
+    /* color: green; */
+    background-color: green;
+    cursor: pointer;
+    /* border: 0px; */
 }
 button{
     width: 170px;
+    height: 30px;
 }
 button:hover{
     
@@ -57,11 +65,21 @@ button:hover{
 }
 h2{
     padding: 0%;
-    margin: 0px;
+    margin: 10px;
     color: rgb(6, 6, 6);
+}
+#textt{
+    padding-top: 50px;
+    color: rgb(13, 242, 13);
+    text-align:left;
 }
 h4{
     color: green;
+}
+#imgg{
+    margin-top: 200px;
+    mix-blend-mode:color-burn;
+    width: 200px;
 }
 *{
     padding: 0px;

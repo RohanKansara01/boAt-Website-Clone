@@ -11,23 +11,19 @@ form.addEventListener("submit", function(event){
         email : event.target.email.value,
         password : event.target.pass.value,
     }
+let EmailExists = storage.some(element => element.email === obj.email)
 
-    storage.forEach(element => {
-        if(element.email==obj.email){
-            alert("Email Id is Exist")
-            return
-        }else{
-
-            storage.push(obj);
-            localStorage.setItem("data", JSON.stringify(storage))
-            
-        if(obj.user=="" || obj.email=="" || obj.password==""){
-            alert("Please fil all deatils")
-        }else{
-            // alert("Your Otp is 1234")
-             window.location.href = "otp.html"
-            }
+if(EmailExists){
+    alert("Email Id is Exist")
+}else{
+    if(obj.user=="" || obj.email=="" || obj.password==""){
+        alert("Please fil all deatils")
+    }else{
+        
+        storage.push(obj);
+        localStorage.setItem("data", JSON.stringify(storage))
+         window.location.href = "otp.html"
         }
-    });
-       
+
+    }
 })

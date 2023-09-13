@@ -26,25 +26,33 @@
     height: 300px;
     text-align: center;
     box-shadow:1px 1px 6px 1px rgb(135, 123, 123);
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 0px;
     /* justify-content:space-between ; */
 }
 #firstChildDiv:hover{
-    display: flex;
     mix-blend-mode:normal;
-    flex-direction:column;
-    background-color:rgb(233, 233, 233);
-    width: 380px;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    border: 1px solid rgb(157, 147, 147);
-    height: 300px;
-    text-align: center;
-    box-shadow:1px 1px 6px 1px rgb(135, 123, 123);
-    border-radius: 10px;
-    /* justify-content:space-between ; */
 }
+#firstDiv{
+    width: 120px;
+    height: 300px;
+    mix-blend-mode:soft-light;
+    background-color:rgb(175, 175, 175);
+    border: 1px solid rgb(10,10,10);
+    border-radius:10px 0px 0px 10px;
+    /* box-shadow:1px 1px 5px 1px rgb(249, 247, 247); */
+    /* border: 2px solid black; */
+}
+#textt{
+    color: rgb(246, 245, 240);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-left: 10px;
+}
+#firstDiv:hover{
+    mix-blend-mode: normal;
+    /* background-color: red; */
+    }
 form{
     align-items: center;
     /* margin-top: 20px; */
