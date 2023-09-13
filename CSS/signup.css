@@ -1,0 +1,94 @@
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(10, 10, 10);
+    height: 799px;
+    background-image: url("https://gumlet.assettype.com/afaqs%2F2022-05%2F793177dc-ad39-4d65-8131-7a5d67f4e328%2FUntitled_design___2022_05_17T123917_209.png?rect=0%2C0%2C1280%2C720&format=webp&w=400&dpr=2.6");
+    align-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
+  
+  /* background-size: 100% 100%; */
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#firstChildDiv{
+    display: flex;
+    flex-direction:column;
+    mix-blend-mode:soft-light;
+    border-radius: 20px;
+    background-color:rgb(240, 232, 232);
+    width: 380px;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border: 1px solid rgb(242, 239, 239);
+    height: 490px;
+    text-align: center;
+    box-shadow:1px 1px 5px 1px rgb(232, 230, 230);
+    transition: width 2s;
+}
+#firstChildDiv:hover{
+    display: flex;
+    mix-blend-mode: normal;
+    flex-direction:column;
+    border-radius: 20px;
+    background-color:rgb(240, 232, 232);
+    width: 380px;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border: 1px solid rgb(242, 239, 239);
+    height: 490px;
+    text-align: center;
+    box-shadow:1px 1px 5px 1px rgb(232, 230, 230);
+    transition: width 2s;
+}
+#user{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+#email{
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+#pass{
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+#submit{
+    width: 150px;
+    height: 40px;
+    /* margin-left: 50px; */
+    margin-top: 40px;
+    background-color: rgb(179, 196, 71);
+    border: 0pc;
+}
+#submit:hover{
+    background-color: rgb(60, 255, 0);
+    cursor: url(hand.cur), pointer;
+}
+form{
+    align-items: center;
+    margin-top: 20px;
+}
+#NewUserSignUpbtn{
+    margin-top: 60px;
+    text-transform: none;
+    text-decoration: none;
+    color: black;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
