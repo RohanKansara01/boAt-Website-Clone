@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otp Verification</title>
     <link rel="stylesheet" href="./CSS/otp.css" />
-    <link rel = "icon" href = 
-"https://www.appengine.ai/uploads/images/profile/logo/boAt-AI.png" 
-        type = "image/x-icon">
-    
+    <link rel="icon" href="https://www.appengine.ai/uploads/images/profile/logo/boAt-AI.png" type="image/x-icon">
 </head>
 <body>
     <div id="main">
         <div id="firstDiv">
-            <h2 id="textt">
-                Verify Your Mail And You Are Good To Go.......
-            </h1>
-            <!-- <h1><strong>Over here ></strong></h1> -->
+            <h2 id="textt">Verify Your Mail And You Are Good To Go.......</h2>
             <img id="imgg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Boat_Logo.webp/1200px-Boat_Logo.webp.png">
         </div>
         <div id="firstChildDiv">
             <h2>Email Verification</h2>
-            <h1></h1>
-            <button><h4>Get Otp !!!!!!</h4></button>
+            <button id="getOtpBtn" onclick="getOtp()">Get Otp !!!!!!</button>
             
-            <form> 
+            <form id="otpForm"> 
                 <input type="text" id="otpInput" placeholder="Enter otp">
-                <input type="submit" id="submit">
+                <h3 id="wrongotp"></h3>
+                <input type="button" id="submit" value="Submit" onclick="checkOtp()">
             </form>
         </div>
     </div>
-    
+
+    <div id="otpModal">
+        <h4>OTP Sent Successfully</h4>
+        <p>Your OTP is: <span id="otpValue"></span></p>
+        <button onclick="closeModal()">OK</button>
+    </div>
+
+    <script src="./script/otp.js"></script>
 </body>
 </html>
-<script src="./script/otp.js"></script>

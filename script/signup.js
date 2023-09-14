@@ -1,6 +1,4 @@
 
-
-
 let storage = JSON.parse(localStorage.getItem("data")) || []
 let form = document.querySelector("form");
 form.addEventListener("submit", function(event){
@@ -13,17 +11,13 @@ form.addEventListener("submit", function(event){
     }
 let EmailExists = storage.some(element => element.email === obj.email)
 
-if(EmailExists){
+if(obj.user=="" || obj.email=="" || obj.password==""){
+    alert("Please fil all deatils")
+}else if(EmailExists){
     alert("Email Id is Exist")
 }else{
-    if(obj.user=="" || obj.email=="" || obj.password==""){
-        alert("Please fil all deatils")
-    }else{
-        
         storage.push(obj);
         localStorage.setItem("data", JSON.stringify(storage))
          window.location.href = "otp.html"
-        }
-
     }
 })

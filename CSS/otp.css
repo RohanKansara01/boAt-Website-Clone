@@ -1,3 +1,32 @@
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://gumlet.assettype.com/afaqs%2F2022-05%2F793177dc-ad39-4d65-8131-7a5d67f4e328%2FUntitled_design___2022_05_17T123917_209.png?rect=0%2C0%2C1280%2C720&format=webp&w=400&dpr=2.6");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(226, 215, 215);
+}
+
+#firstChildDiv {
+    position: relative;
+}
+
+#otpModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: none;
+}
+
 #main{
     display: flex;
     justify-content: center;
