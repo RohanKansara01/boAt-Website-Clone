@@ -9,6 +9,7 @@ form.addEventListener("submit" , function(event){
         window.location.href="signin.html"
     }else{
         alert("Wrong Otp")
+        
     }
 }
 })
