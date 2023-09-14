@@ -42,18 +42,18 @@
     background-color: rgb(226, 215, 215);
 }
 #firstChildDiv{
-    margin-right: 110px;
+    /* margin-right: 110px; */
     display: flex;
     flex-wrap: wrap;
-    /* mix-blend-mode:darken; */
+    mix-blend-mode: hard-light;
     width: 350px;
-    height: 550px;
+    height: 350px;
     justify-content:center;
     text-align: center;
     align-items: center;
     background-color: rgb(188, 217, 228);
     box-shadow: 1px 1px 5px 1px rgb(151, 147, 147);
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px;
 }
 #firstChildDiv:hover{
     mix-blend-mode: normal;
@@ -74,8 +74,8 @@ strong{
 }
 #otpInput{
     text-align: center;
-    /* margin-top: 10px; */
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     width: 300px;
     height: 40px;
 }
@@ -83,7 +83,7 @@ strong{
     width: 80px;
     height:30px;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     background-color: red;
     border: 0px;
     margin-bottom: 100px;
@@ -96,6 +96,7 @@ strong{
     /* border: 0px; */
 }
 button{
+    margin-top: 30px;
     width: 170px;
     height: 30px;
 }
