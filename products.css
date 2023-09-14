@@ -15,6 +15,8 @@
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
 }
+
+/* Product Box Container CSS Started From Here */
 .productDiv{
     width: 100%;
     display: flex;
@@ -34,6 +36,7 @@
     width: 65%;
     padding: 0px 0px 6px 0px;
 }
+/* Left Side Element - CSS  */
 .productImage{
     width: 100%;
     border-radius: 8px;
@@ -51,6 +54,24 @@
     width: 100%;
     background-color: #fcc50b;
     border-radius: 0px 0px 8px 8px;
+}
+/* Right Side Element - CSS */
+.ratingDiv{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.spanForIcon{
+    font-size: 16px;
+}
+.ratingOfProduct{
+    font-size: 12px;
+    font-weight: 500;
+}
+.productName{
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 4px;
 }
 .priceDetails{
     width: 100%;
@@ -72,14 +93,14 @@
 }
 .offerPercantage{
     display: inline;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
     color: #12b985;
 
 }
 .featureDiv{
     width: 100%;
-    padding: 0px 10px 20px 0px;
+    padding: 0px 10px 10px 0px;
 }
 .horizontal-line{
     border: none;
@@ -111,4 +132,11 @@
     padding: 8px 0px;
     border-radius: 8px;
     border: none;
+}
+
+@media only screen and (max-width:1100px){
+    #showProducts{grid-template-columns: 1fr  1fr;}
+}
+@media only screen and (max-width:767px) {
+    #showProducts{grid-template-columns: 1fr;}
 }
