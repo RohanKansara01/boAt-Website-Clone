@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="indexstyle.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
 </head>
 <body>
     <div id="announcement-bar">
@@ -61,36 +62,46 @@
               <i class="arrow down"></i>
             </button>
             <div class="more-dropdown-content">
-              <a href="#">True Wireless Earbuds</a>
-              <a href="#">Wired Headphones</a>
-              <a href="#">Trimmers</a>
-              <a href="#">SuperHero Collection</a>
+              <a href="#">Do What Floats your boAt</a>
+              <a href="#">Blogs</a>
+              <a href="#">Corporate Orders</a>
+              <a href="#">Earn &#8377;100</a>
+              <a href="#">Careers</a>
+              <a href="#">Social Responsibility</a>
+              <a href="#">Store Locator</a>
             </div>
           </div>
         </div>
       </div>
-        <div class="search-login">
-            <input type="text">
+
+
+
+      <div id="searchbox-carticons">
+        <div class="topDiv">
+          <input class="searchBar" type="text" name="search" placeholder="Search">
+          <button type="submit" class="button">
+            <i class="gg-search"></i>
+          </button>
         </div>
+        <div class="login-cart-icon">
+          <a href="#"> <img class="loginimage" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="cart"></a>
+          <a href="#"> <img class="cartimage" src="https://cdn0.iconfinder.com/data/icons/commerce-outline/512/shopping_bag-512.png" alt="profile"></a>
+        </div>
+      </div>
+
+
     </div>
+
+
+
+
     <div class="slideshow">
       <div id="slideshow-image">
         <img src="https://www.boat-lifestyle.com/cdn/shop/files/Lunarvista_desktop-_2_1440x.jpg?v=1694601772" alt="image">
       </div>
     </div>
 
-    <div id="bestsellerpanel">
-      <h3>Explore <b>Bestselle<u>rs</u></b></h3>
-      <div class="videoscrollmenu">
-        <div>
-          <video src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_RUxbhR7CvjkNtlFUDxgw9.mp4?v=5354683704256941483"></video>
-          <p>Smartwatches</p>
-        </div>
-        <div>
-          <video src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_Bejc8URjU1NSXdhabLCmD.mp4?v=6517359867084812371"></video>
-        </div>
-      </div>
-    </div>
+    
 </body>
 
 
@@ -115,5 +126,19 @@
 }
 setInterval(slider,3000);
 
+</script>
+<script>
+  document.querySelector(".button").addEventListener("click",
+  function (){
+      // var target=event.target
+      target=event.preventDefault()
+      var val=document.querySelector(".searchBar").value
+      if(val==="earbuds"){
+          window.location.href="https://www.boat-lifestyle.com/products/airdopes-131"
+      }else if(val==="headphones"){
+          document.body.style.backgroundColor="green"
+      }
+      console.log(val)
+  })
 </script>
 </html>
