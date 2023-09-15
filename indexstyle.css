@@ -239,10 +239,12 @@ font-size: 12px;
   .loginimage{
     width: 30px;
     height: 10px;
+    cursor: pointer;
   }
   .cartimage{
     width: 30px;
     height: 30px;
+    cursor: pointer;
   }
 
   /* navbar media queries */
@@ -288,17 +290,203 @@ font-size: 12px;
 
 /* underline color */
 * u{
-    text-decoration: underline red;
+  text-decoration: underline red;
+}
+.notbold{
+  font-weight: normal;
 }
 
-/* scrollmenu bestseller video animation */
+/* Daily Deals divs */
 h3{
-    font-size: 24px;
-    font-family: inherit;
+  font-size: 24px;
+  font-family: inherit;
 }
 
-#bestsellerpanel{
-    border: 2px solid black;
-    width: 95%;
-    margin: auto;
+#daily-deals{
+  /* border: 2px solid black; */
+  width: 95%;
+  height: 520px;
+  margin: auto;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+}
+/* .div-heading{
+  border: 2px solid black;
+} */
+.product-list{
+  /* border: 2px solid black; */
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(4,24%);
+  column-gap: auto;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+
+.products-displayed{
+  height: 450px;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.product-image{
+  height: 78%;
+}
+.product-image img{
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  width:100%;
+  height:100%;
+}
+
+.product-details-addtocart{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: #fafafa;
+  justify-content: space-evenly;
+}
+.price-rating-div>a{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  width: 100%;
+}
+.price-rating-div a{
+  font-size: small;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.product-price{
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: -15px;
+}
+strike{
+  color: lightgrey;
+  font-size: 12px;
+}
+.discount-tag{
+  display: inline;
+  color:green;
+  font-size: 12px;
+}
+.rating-value{
+  display: inline-block;
+  font-size: 12px;
+}
+.addtocart-btn{
+  width: 50%;
+  margin: auto;
+}
+.addtocart-btn>button{
+  float: right;
+  width: 110px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+/* shop by categories div */
+.shop-by-category{
+  width: 95%;
+  margin: auto;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+.categories-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.categories-list-image{
+  /* border: 2px solid black; */
+  display: flex;
+  width: 8%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.categories-list-image img{
+  justify-content: center;
+}
+.categories-list p{
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* info div */
+.info{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.child-info{
+  /* border: 2px solid black; */
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.child-info img{
+  width: 120px;
+  margin-bottom: -15px;
+}
+
+
+
+/* shop by lifestyle divs */
+
+.shop-by-lifestyle-parent{
+  width: 95%;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+.shop-by-lifestyle{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  column-gap: auto;
+  justify-content: space-between;
+}
+.shop-by-lifestyle-child{
+  border: none;
+  box-shadow: 0px 15px 10px -15px #111; 
+}
+.shop-by-lifestyle-child img{
+  width: 275px;
+}
+.shop-by-lifestyle-child p{
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+.shop-by-lifestyle-child button{
+  transform: translate(130%, -50%);
+  border: none;
+  color: blue;
+  background-color: white;
+  cursor: pointer;
 }
