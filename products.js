@@ -140,6 +140,7 @@ function displayProducts(data) {
                 cartItem.push(element);
                 localStorage.setItem("cart", JSON.stringify(cartItem));
                 alert("Item added to the cart");
+                addToCartBtn.innerText = "Added in Cart";
             } else {
                 alert("Item already in cart");
             }
@@ -171,8 +172,8 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (selectedOptionValue === "Default") {
             displayProducts(allData);
         }
-        console.log(selectedOptionValue);
-        console.log(sortedData);
+        // console.log(selectedOptionValue);
+        // console.log(sortedData);
     });
     var categoryFilter = document.getElementById("filter");
     categoryFilter.addEventListener("change", function () {
