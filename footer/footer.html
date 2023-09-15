@@ -5,58 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="./footer.css"> -->
     <style>
-       @media (max-width: 768px) {
-            .headfooterDiv {
-                display: none;
-                display: grid;
-            grid-template-columns:1fr;
-                height: auto;
-                background-color: rgb(231, 240, 245);
-            }
-            .ChiledfooterDiv, .Chiled2footerDiv, .Chiled3footerDiv, .Chiled4footerDiv {
-                display: flex;
-                flex-direction: column;
-                display: none;
-                margin-left: 0;
-                width: 100%;
-                text-align: center;
-                padding: 20px;
-            }
-            #bodyFooterChildDiv1{
-                display: none;
-              
-            }
-            .imgfooter {
-                margin-top: 20px;
-            }
-            .h2footer {
-                margin-bottom: 20px;
-            }
-            .inputfooter {
-                margin-bottom: 20px;
-            }
-            .pfooter {
-                margin-bottom: 20px;
-            }
-            .FootDiv {
-                height: auto;
-                text-align: center;
-            }
-            .FootDivChild1, .FootDivChild2, .FootDivChild3 {
-                margin: 10px;
-            }
-            .FootDivChild1 img {
-                margin: 5px;
-                width: 30px;
-                height: 30px;
-            }
-            .FootDivChild2 h2 {
-                margin-bottom: 10px;
-            }
-            .FootDivChild3 h4 {
-                font-size: 12px;
-            }
-        }
+        
         *{
             padding: 0px;
             margin: 0px;
@@ -65,45 +14,47 @@
             display: grid;
             grid-template-columns:repeat(4, 25%);
             /* gap: 2%; */
-            height: 450px;
+            /* height: 450px; */
+            width: 100%;
             background-color: rgb(231,240,245);
             /* border: 1px solid black; */
         }
         .ChiledfooterDiv{
-            margin-left: 40px;
+            /* margin-left: 40px; */
             display: flex;
             flex-wrap: wrap;
-            height: 400px;
-            width: 400px;
+            height: 300px;
+            width: 25%;
+            margin-left: 10%;
             /* border: 1px solid black; */
             justify-content: start;
             align-items:center;
         }
         .Chiled2footerDiv{
             /* display: flex; */
-            margin-left: 15%;
+            /* margin-left: 15%; */
             flex-wrap: wrap;
-            width: 370px;
+            width: 25%;
             justify-content: space-around;
             /* border: 1px solid black; */
             text-align:left;
         }
         .Chiled3footerDiv{
 
-            width: 200px;
-            margin-left: 150px;
+            width: 25%;
+            /* margin-left: 150px; */
             /* border: 1px solid black; */
         }
         .Chiled4footerDiv{
-            width: 300px;
-            margin-left: -10px;
-            /* border: 1px solid black; */
+            width: 25%;
+            
         }
         .imgfooter{
             margin-top: 50px;
             
         }
         .h2footer{
+            /* margin: auto; */
             font-family: Arial, Helvetica, sans-serif;
             /* margin-bottom: 200px; */
         }
@@ -117,7 +68,7 @@
             cursor: pointer;
         }
         .inputfooter{
-            margin-bottom: 170px;
+            /* margin-bottom: 170px; */
             text-align:center;
             width: 330px;
             height: 50px;
@@ -127,17 +78,17 @@
         #bodyFooterDiv{
             background-color: rgb(239,244,247);
             /* border: 5px solid red; */
-            height: 1800px;
+            /* height: 1800px; */
         }
-        #bodyFooterChildDiv1{
+        .bodyFooterChildDiv1{
             /* margin-top: 50px; */
             display: flex;
             flex-wrap: wrap;
             /* border: 2px solid black; */
-            height: 400px;
+            height: 100%px;
             /* margin-left: 5%; */
         }
-        #bodyFooterDecDiv1{
+        .bodyFooterDecDiv1{
             margin-top: 50px;
             display: flex;
             flex-wrap: wrap;
@@ -146,42 +97,38 @@
             margin-left: 8%;
             justify-content:left;
         }
-        #bodyFooterDecDiv1>h2:hover{
+        .bodyFooterDecDiv1>h2:hover{
             cursor: pointer;
         }
-        #bodyFooterDecDiv1>h4:hover{
+        .bodyFooterDecDiv1>h4:hover{
             cursor: pointer;
         }
-        #bodyFooterDecDiv1>p:hover{
+        .bodyFooterDecDiv1>p:hover{
             cursor: pointer;
         }
-        *{
-            padding: 0px;
-            margin: 0px;
-        }
-
         .FootDiv{
-            height: 300px;
+            /* height: 300px; */
             /* border: 2px solid black; */
             background-color: rgb(231,240,245);
             /* display: flex; */
             /* justify-content: center; */
         }.FootDiv>.FootDivChild1{
             display: flex;
-            justify-content: center;
-            height: 50px;
+            justify-content: space-evenly;
+            text-align: center;
+            /* height: 50px; */
             /* border: 2px solid black; */
         }
         .FootDiv>.FootDivChild1>img{
-            margin-left: 40px;
+            /* margin-left: 40px; */
             margin-top: 10px;
             width: 20px;
             height: 25px;
         }
         .FootDiv>.FootDivChild1>img:nth-child(3){
-            margin-left: 40px;
+            /* margin-left: 40px; */
             margin-top: 10px;
-            width: 50px;
+            /* width: 5%; */
             /* height: 55px; */
         }
         .FootDivChild2{
@@ -193,11 +140,42 @@
             display: flex;
             justify-content: center;
             /* border: 2px solid black; */
-            width: 1000px;
-            margin-left: 200px;
+            width: 70%;
+            margin: auto;
+            /* margin-left: 200px; */
             text-align: center;
             margin-top: 60px;
         }
+        @media only screen and (max-width: 768px) {
+    /* Add your responsive styles for mobile screens here */
+    .headfooterDiv {
+        grid-template-columns: 2fr; /* Change to a single column layout */
+        height: auto;
+        /* margin-left: 10%; */
+
+        /* text-align: center; */
+    }
+    
+    .ChiledfooterDiv {
+        /* margin-left: 50%; */
+        width: 50%;
+        text-align: center;
+        /* padding: 20px; */
+    }
+    
+    .bodyFooterChildDiv1 {
+        margin: auto;
+        /* display: none; Hide this section for mobile screens */
+        grid-template-columns: 1fr;
+    }
+    .FootDiv>.FootDivChild1>img:nth-child(3){
+           display: none;
+        }
+    
+    /* Add more responsive styles as needed */
+}
+     
+
     </style>
     <title>footer page</title>
 </head>
@@ -206,12 +184,13 @@
     <div class="ChiledfooterDiv">
         <img class="imgfooter" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt_logo.svg">
         <h2 class="h2footer">Subscribe to our email alerts!</h2>
-        <input class="inputfooter" type="email" placeholder="    Enter your Email address                                   >">
+        <input class="inputfooter" type="email" placeholder="    Enter your Email >">
     </div>
     <div class="Chiled2footerDiv">
        <h4 class="h4footer">Shop</h4><br>
        <p class="pfooter">
-        True Wireless Earbuds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wireless Headphones <br><br>  Wired Headphones &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wireless Speakers  <br><br>Home Audio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile Accessories <br><br>Smart Watches &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRebel <br><br>Misfit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gift Card <br><br>Earn ₹100</p>
+        <!-- True Wireless Earbuds<br> Wireless Headphones <br><br>  Wired Headphones <br>Wireless Speakers  <br></p> -->
+        <p class="pfooter"> Audio <br>Mobile Accessories <br>Smart Watches <br>TRebel <br>Misfit<br>Gift Card <br>Earn ₹100</p>
     </div>
     <div class="Chiled3footerDiv">
         <h4 class="h4footer">Shop</h4><br>
@@ -244,8 +223,8 @@
 
 </div>
 <div id="bodyFooterDiv">
-     <div id="bodyFooterChildDiv1">
-        <div id="bodyFooterDecDiv1" >
+     <div class="bodyFooterChildDiv1">
+        <div class="bodyFooterDecDiv1" >
             <h2>True Wireless Earbuds</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -264,7 +243,7 @@
                 Earbuds Under 1000<br>
             </p>
         </div>
-        <div id="bodyFooterDecDiv1" >
+        <div class="bodyFooterDecDiv1" >
             <h2>Wired Headphones</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -280,7 +259,7 @@
                 Earbuds Under 3000<br>
             </p>
         </div>
-        <div id="bodyFooterDecDiv1" >
+        <div class="bodyFooterDecDiv1" >
             <h2>Smart Watches</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -302,7 +281,7 @@
                 Smartwatch Under 4000<br>
             </p>
         </div>
-        <div id="bodyFooterDecDiv1" >
+        <div class="bodyFooterDecDiv1" >
             <h2>Trebel Range</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -315,8 +294,8 @@
             </p>
         </div>
      </div>
-     <div id="bodyFooterChildDiv1">
-        <div id="bodyFooterDecDiv1" >
+     <div class="bodyFooterChildDiv1">
+        <div class="bodyFooterDecDiv1" >
             <h2>Wireless Earphones</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -333,7 +312,7 @@
                 Earbuds Under 1000<br>
             </p>
         </div>
-        <div id="bodyFooterDecDiv1" >
+        <div class="bodyFooterDecDiv1" >
             <h2>Gaming Headphones</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -344,7 +323,7 @@
                 Headphone for PC Gaming<br>
             </p>
         </div>
-        <div id="bodyFooterDecDiv1" >
+        <div class="bodyFooterDecDiv1" >
             <h2>Trimmers</h2><br>
             <h4>Shop by Features&nbsp;&nbsp;&nbsp;&nbsp;</h4><br>
             <p>
@@ -359,7 +338,7 @@
                 Smartwatch Under 2000<br>
             </p>
         </div>
-        <div id="bodyFooterDecDiv1" >
+        <div class="bodyFooterDecDiv1" >
             <h2>Powerbanks</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -379,8 +358,8 @@
             </p>
         </div>
      </div>
-     <div id="bodyFooterChildDiv1">
-        <div id="bodyFooterDecDiv1" >
+     <div class="bodyFooterChildDiv1">
+        <div class="bodyFooterDecDiv1" >
             <h2>Wired Earphones</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -398,7 +377,7 @@
         
 
 
-        <div id="bodyFooterDecDiv1" >
+        <div class="bodyFooterDecDiv1" >
             <h2>Wireless Speakers</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -420,7 +399,7 @@
 
         
 
-        <div id="bodyFooterDecDiv1" >
+        <div class="bodyFooterDecDiv1" >
             <h2>Limited Editions</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -433,7 +412,7 @@
         </div>
 
 
-        <div id="bodyFooterDecDiv1" >
+        <div class="bodyFooterDecDiv1" >
             <h2>Chargers &nbsp;&nbsp;&nbsp;</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -451,8 +430,8 @@
 
 
 
-     <div id="bodyFooterChildDiv1">
-        <div id="bodyFooterDecDiv1" >
+     <div class="bodyFooterChildDiv1">
+        <div class="bodyFooterDecDiv1" >
             <h2>Wireless Headphones</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -476,7 +455,7 @@
 
 
 
-        <div id="bodyFooterDecDiv1" >
+        <div class="bodyFooterDecDiv1" >
             <h2>Soundbars &nbsp;</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -500,7 +479,7 @@
         
 
 
-        <div id="bodyFooterDecDiv1" >
+        <div class="bodyFooterDecDiv1" >
             <h2>Car Accessories &nbsp;&nbsp;</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
@@ -517,7 +496,7 @@
 
     
 
-        <div id="bodyFooterDecDiv1" >
+        <div class="bodyFooterDecDiv1" >
             <h2>Cables&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2><br>
             <h4>Shop by Features</h4><br>
             <p>
