@@ -1,15 +1,17 @@
+var allData;
 fetch("product.json")
     .then(response => response.json())
     .then(data => {
-        const allData = data.productsData;
+        allData = data.productsData;
         displayProducts(allData);
     })
     .catch(error => {
         console.error("Error fetching data:", error);
     });
-
 //function for Displying the Data on Page
 function displayProducts(data) {
+    var parent = document.querySelector("#showProducts");
+    parent.innerHTML = "";
     data.forEach(element => {
 
         var productDiv = document.createElement("div");
@@ -48,11 +50,11 @@ function displayProducts(data) {
         var priceDetails = document.createElement("div");
         priceDetails.setAttribute("class", "priceDetails");
 
-        var strikedoffprice = document.createElement("p");
-        strikedoffprice.setAttribute("class", "normalPrice");
-
         var price = document.createElement("p");
         price.setAttribute("class", "salePrice");
+
+        var strikedoffprice = document.createElement("p");
+        strikedoffprice.setAttribute("class", "normalPrice");
 
         var off = document.createElement("p");
         off.setAttribute("class", "offerPercantage");
@@ -99,8 +101,8 @@ function displayProducts(data) {
 
         ratingDiv.appendChild(spanForIcon)
         ratingDiv.appendChild(rating)
-        priceDetails.appendChild(strikedoffprice);
         priceDetails.appendChild(price)
+        priceDetails.appendChild(strikedoffprice);
         priceDetails.appendChild(off)
         featureDiv.appendChild(line);
         featureDiv.appendChild(featureOne);
@@ -115,7 +117,7 @@ function displayProducts(data) {
 
         productDiv.appendChild(leftSideDiv);
         productDiv.appendChild(rightSideDiv);
-        var parent = document.querySelector("#showProducts");
+
         parent.appendChild(productDiv);
 
         //Add to cart Button function
@@ -135,17 +137,31 @@ function displayProducts(data) {
     });
 }
 document.addEventListener("DOMContentLoaded", function () {
-    var selectElement = document.getElementById("filter");
-    var filter = document.getElementById("sort-by")
+    var sortBy = document.getElementById("sort-by");
 
-    selectElement.addEventListener("change", function () {
-        var selectedOptionValue = selectElement.value;
+    sortBy.addEventListener("change", function () {
+        var selectedOptionValue = sortBy.value;
+        var sortedData;
+
+        if (selectedOptionValue === "low-high") {
+            sortedData = [...allData].sort((a, b) => a.price - b.price);
+            displayProducts(sortedData);
+        } else if (selectedOptionValue === "high-low") {
+            sortedData = [...allData].sort((a, b) => b.price - a.price);
+            displayProducts(sortedData);
+        } else if (selectedOptionValue === "top-rated") {
+            sortedData = [...allData].sort((a, b) => b.rating - a.rating);
+            displayProducts(sortedData);
+        } else if (selectedOptionValue === "alphabetical-az") {
+            sortedData = [...allData].sort((a, b) => a.name.localeCompare(b.name));
+            displayProducts(sortedData);
+        } else if (selectedOptionValue === "alphabetical-za") {
+            sortedData = [...allData].sort((a, b) => b.name.localeCompare(a.name));
+            displayProducts(sortedData);
+        } else if (selectedOptionValue === "Default") {
+            displayProducts(allData);
+        }
         console.log(selectedOptionValue);
+        console.log(sortedData);
     });
-
-    filter.addEventListener("change", function () {
-        var filterValue = filter.value;
-        console.log(filterValue);
-    });
-
 });

@@ -111,15 +111,13 @@
     width: 100%;
     padding: 5px 0px;
 }
-
-.normalPrice {
+.salePrice {
     font-size: 15px;
     font-weight: 700;
     display: inline;
     padding-right: 5px;
 }
-
-.salePrice {
+.normalPrice {
     display: inline;
     font-size: 12px;
     text-decoration: line-through;
@@ -127,7 +125,6 @@
     font-weight: 600;
     padding-right: 5px;
 }
-
 .offerPercantage {
     display: inline;
     font-size: 10px;
@@ -135,12 +132,10 @@
     color: #12b985;
 
 }
-
 .featureDiv {
     width: 100%;
     padding: 0px 10px 10px 0px;
 }
-
 .horizontal-line {
     border: none;
     border-top: 1px solid rgba(192, 192, 192, 0.5);
