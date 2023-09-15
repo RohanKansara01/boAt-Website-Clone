@@ -15,7 +15,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 30px 0px;
+    gap: 10px;
 }
 
 #filter {
@@ -50,7 +52,15 @@
     border-radius: 10px;
     padding: 5px 3px;
 }
-
+#ifOutOfStock{
+    margin: auto;
+    width: 80%;
+}
+.noProductAvl{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
 .leftSideDiv {
     width: 175px;
     height: 175px;

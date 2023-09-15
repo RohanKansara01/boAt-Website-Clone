@@ -12,6 +12,16 @@ fetch("product.json")
 function displayProducts(data) {
     var parent = document.querySelector("#showProducts");
     parent.innerHTML = "";
+    var outOfStock = document.querySelector("#ifOutOfStock")
+    outOfStock.innerHTML = ""
+    
+    if(data.length === 0){
+        var noProduct = document.createElement("h2");
+        noProduct.setAttribute("class", "noProductAvl");
+        noProduct.innerText = "We are currently out of stock in this category";
+
+        outOfStock.appendChild(noProduct)
+    }
     data.forEach(element => {
 
         var productDiv = document.createElement("div");
@@ -163,5 +173,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         console.log(selectedOptionValue);
         console.log(sortedData);
+    });
+    var categoryFilter = document.getElementById("filter");
+    categoryFilter.addEventListener("change", function () {
+        var selectedCategory = categoryFilter.value;
+        var filteredData;
+        if (selectedCategory === "all") {
+            filteredData = allData;
+        } else {
+            filteredData = allData.filter(function (product) {
+                return product.category === selectedCategory;
+            });
+        }
+        displayProducts(filteredData);
     });
 });
