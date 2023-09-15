@@ -42,6 +42,9 @@
     right: 5px;
     cursor: pointer;
 }
+#popupP{
+    color: red;
+}
 
 h2{
     margin-top: 20px;
