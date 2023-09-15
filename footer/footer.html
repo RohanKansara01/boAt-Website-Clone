@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./footer.css"> -->
+    <style>
+       @media (max-width: 768px) {
+            .headfooterDiv {
+                display: none;
+                display: grid;
+            grid-template-columns:1fr;
+                height: auto;
+                background-color: rgb(231, 240, 245);
+            }
+            .ChiledfooterDiv, .Chiled2footerDiv, .Chiled3footerDiv, .Chiled4footerDiv {
+                display: flex;
+                flex-direction: column;
+                display: none;
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+            }
+            #bodyFooterChildDiv1{
+                display: none;
+              
+            }
+            .imgfooter {
+                margin-top: 20px;
+            }
+            .h2footer {
+                margin-bottom: 20px;
+            }
+            .inputfooter {
+                margin-bottom: 20px;
+            }
+            .pfooter {
+                margin-bottom: 20px;
+            }
+            .FootDiv {
+                height: auto;
+                text-align: center;
+            }
+            .FootDivChild1, .FootDivChild2, .FootDivChild3 {
+                margin: 10px;
+            }
+            .FootDivChild1 img {
+                margin: 5px;
+                width: 30px;
+                height: 30px;
+            }
+            .FootDivChild2 h2 {
+                margin-bottom: 10px;
+            }
+            .FootDivChild3 h4 {
+                font-size: 12px;
+            }
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .headfooterDiv{
+            display: grid;
+            grid-template-columns:repeat(4, 25%);
+            /* gap: 2%; */
+            height: 450px;
+            background-color: rgb(231,240,245);
+            /* border: 1px solid black; */
+        }
+        .ChiledfooterDiv{
+            margin-left: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            height: 400px;
+            width: 400px;
+            /* border: 1px solid black; */
+            justify-content: start;
+            align-items:center;
+        }
+        .Chiled2footerDiv{
+            /* display: flex; */
+            margin-left: 15%;
+            flex-wrap: wrap;
+            width: 370px;
+            justify-content: space-around;
+            /* border: 1px solid black; */
+            text-align:left;
+        }
+        .Chiled3footerDiv{
+
+            width: 200px;
+            margin-left: 150px;
+            /* border: 1px solid black; */
+        }
+        .Chiled4footerDiv{
+            width: 300px;
+            margin-left: -10px;
+            /* border: 1px solid black; */
+        }
+        .imgfooter{
+            margin-top: 50px;
+            
+        }
+        .h2footer{
+            font-family: Arial, Helvetica, sans-serif;
+            /* margin-bottom: 200px; */
+        }
+        .h4footer{
+            margin-top: 50px;
+        }
+        .pfooter{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .pfooter:hover{
+            cursor: pointer;
+        }
+        .inputfooter{
+            margin-bottom: 170px;
+            text-align:center;
+            width: 330px;
+            height: 50px;
+            border-radius: 15px;
+            border: 0px solid skyblue;
+        }
+        #bodyFooterDiv{
+            background-color: rgb(239,244,247);
+            /* border: 5px solid red; */
+            height: 1800px;
+        }
+        #bodyFooterChildDiv1{
+            /* margin-top: 50px; */
+            display: flex;
+            flex-wrap: wrap;
+            /* border: 2px solid black; */
+            height: 400px;
+            /* margin-left: 5%; */
+        }
+        #bodyFooterDecDiv1{
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 230px;
+            /* border: 2px solid black; */
+            margin-left: 8%;
+            justify-content:left;
+        }
+        #bodyFooterDecDiv1>h2:hover{
+            cursor: pointer;
+        }
+        #bodyFooterDecDiv1>h4:hover{
+            cursor: pointer;
+        }
+        #bodyFooterDecDiv1>p:hover{
+            cursor: pointer;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .FootDiv{
+            height: 300px;
+            /* border: 2px solid black; */
+            background-color: rgb(231,240,245);
+            /* display: flex; */
+            /* justify-content: center; */
+        }.FootDiv>.FootDivChild1{
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            /* border: 2px solid black; */
+        }
+        .FootDiv>.FootDivChild1>img{
+            margin-left: 40px;
+            margin-top: 10px;
+            width: 20px;
+            height: 25px;
+        }
+        .FootDiv>.FootDivChild1>img:nth-child(3){
+            margin-left: 40px;
+            margin-top: 10px;
+            width: 50px;
+            /* height: 55px; */
+        }
+        .FootDivChild2{
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+        }
+        .FootDivChild3{
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid black; */
+            width: 1000px;
+            margin-left: 200px;
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+    <title>footer page</title>
+</head>
+<body>
+<div class="headfooterDiv">
+    <div class="ChiledfooterDiv">
+        <img class="imgfooter" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt_logo.svg">
+        <h2 class="h2footer">Subscribe to our email alerts!</h2>
+        <input class="inputfooter" type="email" placeholder="    Enter your Email address                                   >">
+    </div>
+    <div class="Chiled2footerDiv">
+       <h4 class="h4footer">Shop</h4><br>
+       <p class="pfooter">
+        True Wireless Earbuds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wireless Headphones <br><br>  Wired Headphones &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wireless Speakers  <br><br>Home Audio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile Accessories <br><br>Smart Watches &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRebel <br><br>Misfit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gift Card <br><br>Earn ₹100</p>
+    </div>
+    <div class="Chiled3footerDiv">
+        <h4 class="h4footer">Shop</h4><br>
+        <p class="pfooter">
+            
+          Track Your Order<br><br>
+          Warranty & Support<br><br>
+          Return Policy<br><br>
+          Service Centers<br><br>
+          Bulk Orders<br><br>
+          FAQs<br><br>
+          Why Buy Direct<br><br>
+        </p>
+    </div>
+    <div class="Chiled4footerDiv">
+        <h4 class="h4footer">Company</h4>
+        <p class="pfooter"><br>
+            News<br><br>
+            Read Our Blog<br><br>
+            Careers<br><br>
+            Security<br><br>
+            Investor Relations<br><br>
+            Social Responsibility<br><br>
+            Warranty Policy<br><br>
+            About boAt
+        </p>
+    </div>
+    
+
+
+</div>
+<div id="bodyFooterDiv">
+     <div id="bodyFooterChildDiv1">
+        <div id="bodyFooterDecDiv1" >
+            <h2>True Wireless Earbuds</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                Long Playback Earphone<br>
+                Clear Calling Earphone<br>
+                Noise Cancellation Earphone<br>
+
+            </p>
+            <h4>Shop by Price&nbsp;&nbsp;&nbsp;&nbsp;</h4><br>
+            <p>
+                Earbuds Under 2000<br>
+                Earbuds Under 3000<br>
+                Earbuds Under 4000<br>
+                Earbuds Under 5000<br>
+                Earbuds Above 5000<br>
+                Earbuds Under 1000<br>
+            </p>
+        </div>
+        <div id="bodyFooterDecDiv1" >
+            <h2>Wired Headphones</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                
+                Wired Headphones with Mic<br>
+                Headphones with Mic for PC<br>
+                Noise Cancellation Earbuds<br>
+            </p>
+            <h4>Shop by Price &nbsp;&nbsp;&nbsp;&nbsp;</h4><br>
+            <p>
+                Earbuds Under 1000<br>
+                Earbuds Under 2000<br>
+                Earbuds Under 3000<br>
+            </p>
+        </div>
+        <div id="bodyFooterDecDiv1" >
+            <h2>Smart Watches</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                Bluetooth Calling Smartwatches<br>
+                Amoled Display Smartwatch<br>
+                Round Dial Smartwatch<br>
+                Fitness Tracker Smartwatch<br>
+                Smartwatch<br>
+                Big Display Smartwatch<br>
+                Shop by Price<br>
+            </p>
+            <h4>Shop by Price</h4><br>
+            <p>
+                Smartwatch Under 1000<br>
+                Smartwatch Under 2000<br>
+                Smartwatch Under 3000<br>
+                Smartwatch Under 5000<br>
+                Smartwatch Above 5000<br>
+                Smartwatch Under 4000<br>
+            </p>
+        </div>
+        <div id="bodyFooterDecDiv1" >
+            <h2>Trebel Range</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                
+                Smartwatch for Women<br>
+                Earbuds for Women<br>
+                Neckband for Women<br>
+                Earphone for Women<br>
+                Headphone for Women<br>
+            </p>
+        </div>
+     </div>
+     <div id="bodyFooterChildDiv1">
+        <div id="bodyFooterDecDiv1" >
+            <h2>Wireless Earphones</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                Long Playback Earphone<br>
+                Clear Calling Earphone<br>
+                Shop by Price<br>
+                Noise Cancellation Earphone
+            </p>
+            <h4>Shop by Price</h4><br>
+            <p>
+                Earbuds Under &nbsp;  4000<br>
+                Earbuds Under 5000<br>
+                Earbuds Above 5000<br>
+                Earbuds Under 1000<br>
+            </p>
+        </div>
+        <div id="bodyFooterDecDiv1" >
+            <h2>Gaming Headphones</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                
+                Gaming Headphones with Mic<br>
+                Low Latency Headphone<br>
+                RGB Light Headphones<br>
+                Headphone for PC Gaming<br>
+            </p>
+        </div>
+        <div id="bodyFooterDecDiv1" >
+            <h2>Trimmers</h2><br>
+            <h4>Shop by Features&nbsp;&nbsp;&nbsp;&nbsp;</h4><br>
+            <p>
+                Grooming Kit for Men<br>
+                Beard Styler<br>
+                Trimmer for Men<br>
+                Shop by Price<br>
+            </p>
+            <h4>Shop by Price</h4><br>
+            <p>
+                Smartwatch Under 1000<br>
+                Smartwatch Under 2000<br>
+            </p>
+        </div>
+        <div id="bodyFooterDecDiv1" >
+            <h2>Powerbanks</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                
+                Power Bank 10000mah<br>
+                Power Bank 20000mah<br>
+                Mobile Power Bank<br>
+                Fast Charging Power Bank<br>
+                Power Bank for iPhone<br>
+            </p>
+            <h4>Shop by Price</h4><br>
+            <p>
+                Smartwatch Under 1000<br>
+                Smartwatch Under 2000<br>
+                Smartwatch Under 3000<br>
+                Smartwatch Under 24000<br>
+            </p>
+        </div>
+     </div>
+     <div id="bodyFooterChildDiv1">
+        <div id="bodyFooterDecDiv1" >
+            <h2>Wired Earphones</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                Wired Earphones with Mic<br>
+                <!-- Clear Calling Earphone<br> -->
+                <!-- Noise Cancellation Earphone<br> -->
+
+            </p>
+            <h4>Shop by Price</h4><br>
+            <p>
+                Earbuds Under 1000<br>
+                Earbuds Under 500<br>
+            </p>
+        </div>
+        
+
+
+        <div id="bodyFooterDecDiv1" >
+            <h2>Wireless Speakers</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                
+                Portable Speakers<br>
+                Long Playback Speakers<br>
+                Waterproof Bluetooth Speaker<br>
+                Party Speaker with RGB Lights<br>
+                Speaker with Karaoke Mic<br>
+            </p>
+            <h4>Shop by Price</h4><br>
+            <p>
+                Earbuds Under 1000<br>
+                Earbuds Under 2000<br>
+                Earbuds Under 3000<br>
+                Bluetooth Speakers Under 8000<br>
+            </p>
+        </div>
+
+        
+
+        <div id="bodyFooterDecDiv1" >
+            <h2>Limited Editions</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                Limited Edition Earbuds<br>
+                Limited Editions Smart Watch<br>
+                Limited Editions Earphone<br>
+                Limited Editions Headphones<br>
+                Limited Edition Speakers<br>
+            </p>
+        </div>
+
+
+        <div id="bodyFooterDecDiv1" >
+            <h2>Chargers &nbsp;&nbsp;&nbsp;</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                Wireless Charger<br>
+                Type C Charger<br>
+                Fast Charger<br>
+                USB Charger<br>
+                Micro USB Charger<br>
+                Type C Adapter<br>
+            </p>
+        </div>
+     </div>
+
+     
+
+
+
+     <div id="bodyFooterChildDiv1">
+        <div id="bodyFooterDecDiv1" >
+            <h2>Wireless Headphones</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                Noise Cancelling Headphones<br>
+                Wireless Gaming Headphone<br>
+                Long Playback Headphones<br>
+                Shop by Price<br>
+            </p>
+            <h4>Shop by Price</h4><br>
+            <p>
+                Wireless Headphones Under 1000
+                Wireless Headphones Under 2000
+                Wireless Headphones Under 3000
+                Wireless Headphones Under 4000
+                Wireless Headphones Above 4000
+            </p>
+        </div>
+
+        
+
+
+
+
+        <div id="bodyFooterDecDiv1" >
+            <h2>Soundbars &nbsp;</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                Dolby Soundbars<br>
+                Soundbar with Wireless Subwoofer<br>
+                Soundbar with Wired Subwoofer<br>
+                Alexa Enabled Soundbar<br>
+                Bluetooth Soundbar<br>
+                Shop by Price<br>
+            </p>
+            <h4>shop by Price</h4>
+            <p>
+                Soundbars Under 10000<br>
+                Soundbars Under 20000<br>
+                Soundbars Under 3000<br>
+                Soundbars Under 5000<br>
+                Soundbars Above 20000<br>
+            </p>
+        </div>
+
+        
+
+
+        <div id="bodyFooterDecDiv1" >
+            <h2>Car Accessories &nbsp;&nbsp;</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                Car Charger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                Aux Cable for Car<br>
+                <!-- Shop by Price<br> -->
+            </p>
+            <h4>Shop by Price</h4><br>
+            <p>
+                Smartwatch Under 500<br>
+                Smartwatch Under 500<br>
+            </p>
+        </div>
+
+    
+
+        <div id="bodyFooterDecDiv1" >
+            <h2>Cables&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2><br>
+            <h4>Shop by Features</h4><br>
+            <p>
+                
+                C Type Cable<br>
+                Micro USB Cable<br>
+                Smart Watch Charging Cable<br>
+                USB C to C Cable<br>
+                C Type to Micro USB<br>
+                Lightning Cable<br>
+            </p>
+        </div>
+     </div>
+
+    <div class="FootDiv">
+        <div class="FootDivChild1">
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" >
+            Let's get social
+        </h1>
+        <img src="https://cdn.worldvectorlogo.com/logos/fb-2.svg">
+        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7911121/twitter-icon-md.png">
+        <img src="https://cdn.worldvectorlogo.com/logos/instagram-glyph-1.svg">
+        <img src="https://cdn-icons-png.flaticon.com/512/48/48968.png">
+        <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-1.svg">
+    </div>
+
+    <div class="FootDivChild2">
+        <h2>Privacy Policy . Terms & Conditions</h2>
+        
+    </div>
+    <div class="FootDivChild3">
+        <h4 style="color: rgb(75, 93, 99);">© 2023 Imagine Marketing Limited. All Rights Reserved.
+
+            For queries contact us: Manager, Imagine Marketing Limited Unit no. 204 & 205, 2nd floor, D-wing & E-wing,
+            Corporate Avenue, Andheri Ghatkopar Link Road, Mumbai, Maharashtra-400093, India</h4>
+        </div>
+    </div>
+
+    
+</div>
+</body>
+</html>
+<script src="./footer.js"></script>
+
