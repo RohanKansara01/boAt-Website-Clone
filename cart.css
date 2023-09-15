@@ -1,0 +1,101 @@
+.container{
+    margin: 80px auto;
+}
+.container table{
+    width: 70%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.about h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+}
+.action{
+    cursor: pointer;
+    color:red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+th{
+    text-align: left;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.637);
+    background: white;
+    font-weight:bold;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    
+}
+td img{
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.strike{
+    font-size: 15px;
+    color: grey;
+    text-decoration: line-through;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.price{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+.right-box{
+    float: right;
+    padding: 20px;
+    border: 1px solid black;
+    width: 28%;
+    height: 250px;
+    margin-top: -300px;
+    box-sizing:border-box;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.279);
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cart-button{
+    display: block;
+    padding: 10px 100px;
+    margin:auto;
+    background-color: rgba(238, 43, 43, 0.959);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    cursor:pointer;
+}
+.total1{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    justify-content: space-around;
+    margin-left: -30px;
+    font-size: 20px;
+}
