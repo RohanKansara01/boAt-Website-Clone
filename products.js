@@ -43,7 +43,7 @@ function displayProducts(data) {
         //Product Name
         var name = document.createElement("h2");
         name.setAttribute("class", "productName")
-        
+
         //Price Details Div
         var priceDetails = document.createElement("div");
         priceDetails.setAttribute("class", "priceDetails");
@@ -92,7 +92,7 @@ function displayProducts(data) {
         featureOne.innerText = element.featureOne;
         featureTwo.innerText = element.featureTwo;
         addToCartBtn.innerText = "Add To Cart"
-        
+
 
         leftSideDiv.appendChild(img);
         leftSideDiv.appendChild(keyline);
@@ -119,7 +119,7 @@ function displayProducts(data) {
         parent.appendChild(productDiv);
 
         //Add to cart Button function
-        addToCartBtn.addEventListener("click", function(){
+        addToCartBtn.addEventListener("click", function () {
             var cartItem = JSON.parse(localStorage.getItem("cart")) || [];
             var itemAlreadyInCart = cartItem.some(function (product) {
                 return product.name === element.name;
@@ -134,3 +134,18 @@ function displayProducts(data) {
         })
     });
 }
+document.addEventListener("DOMContentLoaded", function () {
+    var selectElement = document.getElementById("filter");
+    var filter = document.getElementById("sort-by")
+
+    selectElement.addEventListener("change", function () {
+        var selectedOptionValue = selectElement.value;
+        console.log(selectedOptionValue);
+    });
+
+    filter.addEventListener("change", function () {
+        var filterValue = filter.value;
+        console.log(filterValue);
+    });
+
+});

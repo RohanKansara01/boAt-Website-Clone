@@ -1,25 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
     <link rel="stylesheet" href="products.css">
-    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Poppins:wght@100;200;300;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Poppins:wght@100;200;300;500;600;700&display=swap"
+        rel="stylesheet">
     <script src="products.js"></script>
-    <link rel = "icon" href = "https://www.appengine.ai/uploads/images/profile/logo/boAt-AI.png" type = "image/x-icon">
+    <link rel="icon" href="https://www.appengine.ai/uploads/images/profile/logo/boAt-AI.png" type= "image/x-icon">
+    <!-- Slice Slider -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 </head>
+
 <body>
     <div id="main_div">
         <div id="show_data">
             <h2>Products</h2>
             <div id="functionality_btns">
-
+                <select id="filter">
+                    <option value="True-Wireless-Earbuds">Filter By : True Wireless Earbuds</option>
+                    <option value="Neckbands">Filter By : Neckbands</option>
+                    <option value="Smartwatches">Filter By : Smartwatches</option>
+                    <option value="Headphones">Filter By : Headphones</option>
+                    <option value="Wireless-Speakers">Filter By : Wireless Speakers</option>
+                    <option value="Wired-Earphones">Filter By : Wired Earphones</option>
+                    <option value="Gaming-HeadPhones">Filter By : Gaming HeadPhones</option>
+                </select>
+                <select id="sort-by">
+                    <option value="featured">Sort By : Featured</option>
+                    <option value="top-rated">Sort By : Top Rated</option>
+                    <option value="alphabetical-az">Sort By : Alphabetically, A-Z</option>
+                    <option value="alphabetical-za">Sort By : Alphabetically, Z-A</option>
+                    <option value="price-low-high">Sort By : Price, low to high</option>
+                    <option value="price-high-low">Sort By : Price, high to low</option>
+                    <option value="new-arrivals">Sort By : New Arrivals</option>
+                </select>
             </div>
         </div>
         <div id="showProducts">
             <!-- Append the product in this div -->
         </div>
     </div>
+    <div id="FAQ-div">
+        <div>
+            <h2>FAQ</h2>
+        </div>
+        <div class="faq-Section">
+            <div class="faqChildDiv">
+                <h4 class="faq-question">Q. Do wireless earbuds work with all phones?</h4>
+                <p>Yes, our wireless earbuds work with all phones with Bluetooth. boAt Airdopes connect instantly and
+                    give a seamless connection for the ultimate musical experience.</p>
+            </div>
+            <div class="faqChildDiv">
+                <h4 class="faq-question">Q. What is the difference between wireless and truly wireless earbuds?</h4>
+                <p>Wireless earbuds are audio devices that connect to your Phone/Tablet/PC wirelessly, and the left and
+                    the right earpiece are connected via a wire. Truly wireless earbuds on the other hand have no wires
+                    at all.</p>
+            </div>
+            <div class="faqChildDiv">
+                <h4 class="faq-question">Q. Can wireless earbuds be used individually?</h4>
+                <p>Yes, wireless earphones can be used individually. With wireless earbuds, you can keep one in the case
+                    and one plugged in your ear and still use it to groove to your music.</p>
+            </div>
+            <div class="faqChildDiv">
+                <h4 class="faq-question">Q. How to know that wireless earbuds are fully charged?</h4>
+                <p>boAt Airdopes will have led indicators on the charging case to show if the battery is fully charged.
+                    The LED indicators on the wireless earbuds vary from model to model. Please refer to the manual of
+                    the earbuds in the respective packaging for precise instructions.</p>
+            </div>
+            <div class="faqChildDiv">
+                <h4 class="faq-question">Q. How long does earbuds’ battery last?</h4>
+                <p>boAt earbuds battery backup varies from model to model. It also gets affected by the volume at which
+                    you listen to music on your wireless earbuds. Please refer to the manual of the earbuds in the
+                    respective packaging for precise specifications.</p>
+            </div>
+            <div class="faqChildDiv">
+                <h4 class="faq-question">Q. Do wireless earbuds work with all phones?</h4>
+                <p>Yes, our wireless earbuds work with all phones with Bluetooth. boAt Airdopes connect instantly and
+                    give a seamless connection for the ultimate musical experience.</p>
+            </div>
+        </div>
+    </div>
+    <div id="blog">
+        <h3 id="blogTitle">bo<span>A</span>t BLOGS</h3>
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+                type: 'loop',
+                drag: 'free',
+                gap: '20px',
+                perPage: 4.5,
+                snap: true,
+                perMove: 2,
+                arrows: false,
+                pagination: false,
+                autoplay: true,
+                breakpoints: {
+                    767: {
+                        perPage: 1,
+                        // gap: '.7rem',
+                        // height: '6rem',
+                    },
+                    1100: {
+                        perPage: 2,
+                        // gap: '.7rem',
+                        // height: '6rem',
+                    },
+                },
+                }).mount();
+        });
+    </script>
 </body>
+
 </html>
