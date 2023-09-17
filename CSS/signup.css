@@ -1,14 +1,26 @@
+/* @media only screen and (max-width: 768px) {
+
+#firstChildDiv{
+    color: brown;
+}
+
+
+} */
+
+
 #main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(10, 10, 10);
+    background-color:rgb(250, 244, 244);
+    width: 100%;
     height: 799px;
-    background-image: url("https://gumlet.assettype.com/afaqs%2F2022-05%2F793177dc-ad39-4d65-8131-7a5d67f4e328%2FUntitled_design___2022_05_17T123917_209.png?rect=0%2C0%2C1280%2C720&format=webp&w=400&dpr=2.6");
+    /* background-image: url("https://gumlet.assettype.com/afaqs%2F2022-05%2F793177dc-ad39-4d65-8131-7a5d67f4e328%2FUntitled_design___2022_05_17T123917_209.png?rect=0%2C0%2C1280%2C720&format=webp&w=400&dpr=2.6"); */
     align-content: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-  background-size: cover;
+  
+    background-size: cover;
   
   /* background-size: 100% 100%; */
 }
@@ -53,10 +65,10 @@ h2{
 #firstChildDiv{
     display: flex;
     flex-direction:column;
-    mix-blend-mode:soft-light;
+    /* mix-blend-mode:soft-light; */
     border-radius: 0px 10px 10px 0px;
     background-color:rgb(141,166,194);
-    width: 380px;
+    width: 26%;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
@@ -70,9 +82,9 @@ h2{
     mix-blend-mode: normal;
 }
 #firstDiv{
-    width: 120px;
+    width: 8%;
     height: 490px;
-    mix-blend-mode:soft-light;
+    /* mix-blend-mode:soft-light; */
     background-color:rgb(10,10,10);
     border: 1px solid rgb(10,10,10);
     border-radius:10px 0px 0px 10px;
@@ -92,25 +104,25 @@ h2{
     }
 
 #user{
-    width: 300px;
+    width: 80%;
     height: 40px;
     margin-top: 20px;
     text-align: center;
 }
 #email{
-    width: 300px;
+    width: 80%;
     height: 40px;
     margin-top: 30px;
     text-align: center;
 }
 #pass{
-    width: 300px;
+    width: 80%;
     height: 40px;
     margin-top: 30px;
     text-align: center;
 }
 #submit{
-    width: 150px;
+    width: 40%;
     height: 40px;
     /* margin-left: 50px; */
     margin-top: 40px;
