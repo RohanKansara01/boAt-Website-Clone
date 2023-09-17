@@ -1,0 +1,129 @@
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://gumlet.assettype.com/afaqs%2F2022-05%2F793177dc-ad39-4d65-8131-7a5d67f4e328%2FUntitled_design___2022_05_17T123917_209.png?rect=0%2C0%2C1280%2C720&format=webp&w=400&dpr=2.6");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(226, 215, 215);
+}
+
+#firstChildDiv {
+    position: relative;
+}
+
+#otpModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: none;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    margin: 0px;
+    height: 803px;
+    background-image: url("https://gumlet.assettype.com/afaqs%2F2022-05%2F793177dc-ad39-4d65-8131-7a5d67f4e328%2FUntitled_design___2022_05_17T123917_209.png?rect=0%2C0%2C1280%2C720&format=webp&w=400&dpr=2.6");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
+    background-color: rgb(226, 215, 215);
+}
+#firstChildDiv{
+    /* margin-right: 110px; */
+    display: flex;
+    flex-wrap: wrap;
+    mix-blend-mode: hard-light;
+    width: 350px;
+    height: 350px;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(188, 217, 228);
+    box-shadow: 1px 1px 5px 1px rgb(151, 147, 147);
+    border-radius: 10px;
+}
+#firstChildDiv:hover{
+    mix-blend-mode: normal;
+    /* background-color: aqua; */
+}
+strong{
+    
+    color: red;
+}
+#firstDiv{
+    width: 200px;
+    height: 550px;
+    /* mix-blend-mode:darken; */
+    border: 1px solid black;
+    background-color: rgb(235, 139, 13);
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 1px 1px 5px 1px rgb(83, 82, 82);
+}
+#otpInput{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 300px;
+    height: 40px;
+}
+#submit{
+    width: 80px;
+    height:30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-color: red;
+    border: 0px;
+    margin-bottom: 100px;
+}
+#submit:hover{
+    
+    /* color: green; */
+    background-color: green;
+    cursor: pointer;
+    /* border: 0px; */
+}
+button{
+    margin-top: 30px;
+    width: 170px;
+    height: 30px;
+}
+button:hover{
+    
+    cursor:pointer;
+}
+h2{
+    padding: 0%;
+    margin: 10px;
+    color: rgb(6, 6, 6);
+}
+#textt{
+    padding-top: 50px;
+    margin-bottom: 90px;
+    color: rgb(13, 242, 13);
+    text-align:left;
+}
+h4{
+    color: green;
+}
+#imgg{
+    margin-top: 150px;
+    mix-blend-mode:color-burn;
+    width: 200px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
