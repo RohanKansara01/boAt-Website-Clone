@@ -42,8 +42,18 @@
                 </div>
                 <p>Shipping and Taxes calculated At Checkout</p>
                 <div id="rightSidebtn">
-                    <button>Confirm Order</button>
-                    <button>Pay Vai Cart</button>
+                    <button class="ConfirmOrderBTN">Confirm Order</button>
+                    <button class="ConfirmOrderBTN">Pay with Card</button>
+                </div>
+                <div id="coupenDiv">
+                    <div id="coupenInput">
+                        <p>Coupons and offers</p>
+                        <input type="text" id="Entercoupen" placeholder="Use 'Raghav' To Get 50% OFF">
+                        <button id="coupensubmitBtn">Submit Coupon</button>
+                    </div>
+                    <div id="coupenOutput">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,13 +73,14 @@
             displayCart(CartDATA);
         }
     });
+    var cartTotal = 0;
+    var orderValue = 0;
+    var ShowtotalPrice = document.querySelector("#totalPrice");
+    var totacartPrice = document.createElement("h3");
 
     function displayCart(data) {
         var showcartProduct = document.querySelector("#showCartDetails");
 
-        var ShowtotalPrice = document.querySelector("#totalPrice");
-        var cartTotal = 0;
-        var totacartPrice = document.createElement("h3");
         totacartPrice.innerText = "₹ " + cartTotal;
         ShowtotalPrice.appendChild(totacartPrice);
 
@@ -167,6 +178,14 @@
             var productPrice = parseInt(priceString);
             cartTotal += productPrice;
 
+            remove.addEventListener("click", function () {
+                var selectProduct = this.parentElement.parentElement.parentElement;
+                selectProduct.remove();
+                var productName = element.name;
+                removeFromLocalStorage(productName);
+                updateTotal(-productPrice);
+            })
+
             incrementDIV.addEventListener("click", function () {
                 count++;
                 current.innerText = count;
@@ -178,13 +197,53 @@
                 updateTotal(-productPrice);
             })
             totacartPrice.innerText = "₹ " + cartTotal;
+            orderValue = cartTotal;
 
             function updateTotal(itemPrice) {
                 cartTotal += itemPrice;
                 totacartPrice.innerText = "₹ " + cartTotal;
+                orderValue = cartTotal;
+            }
+            function removeFromLocalStorage(productName) {
+                var CartDATA = JSON.parse(localStorage.getItem("cart")) || [];
+                var updatedCart = CartDATA.filter(item => item.name !== productName);
+                localStorage.setItem("cart", JSON.stringify(updatedCart));
             }
         });
     }
+
+    var couponBtn = document.querySelector("#coupensubmitBtn");
+    var coupenOutput = document.querySelector("#coupenOutput");
+    var coupenSuccess = document.createElement("p");
+    coupenSuccess.setAttribute("id", "coupenSuccess");
+    var coupenWrong = document.createElement("p");
+    coupenWrong.setAttribute("id", "coupenWrong")
+
+    couponBtn.addEventListener("click", function () {
+        var coupen = document.querySelector("#Entercoupen").value;
+        var off = Math.floor(cartTotal * 0.5);
+        coupenWrong.innerText = "";
+        coupenSuccess.innerText = "";
+        if (coupen === "Raghav") {
+            var newCartValue = cartTotal - off;
+            orderValue = newCartValue;
+            totacartPrice.innerText = "₹ " + newCartValue;
+            coupenSuccess.innerText = "You Saved " + off + "₹ With This Coupon"
+            coupenOutput.appendChild(coupenSuccess)
+        } else {
+            coupenWrong.innerText = "Wrong Coupon";
+            coupenOutput.appendChild(coupenWrong);
+        }
+
+    })
+    var confirmOrderButtons = document.querySelectorAll(".ConfirmOrderBTN");
+
+    confirmOrderButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            localStorage.setItem("OrderValue", orderValue);
+            window.location.href = "checkout.html";
+        });
+    });
 </script>
 
 </html>

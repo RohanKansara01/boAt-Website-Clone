@@ -66,7 +66,7 @@
     font-size: 20px;
 
 }
-#rightSidecart p{
+#rightSidecart>p{
     font-size: 12px;
     font-weight: 500px;
     color: #555555;
@@ -76,7 +76,40 @@
 #rightSidebtn{
     width: 100%;
 }
-#rightSidebtn button{
+#coupenInput{
+    width: 100%;
+}
+#coupenInput>p{
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+#Entercoupen{
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 6px;
+    margin-bottom: 10px;
+}
+#coupensubmitBtn{
+    width: 100%;
+    background-color: #ff0000;
+    padding:10px 0px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+}
+#coupenSuccess{
+    font-size: 12px;
+    color: #00922e;
+}
+#coupenWrong{
+    font-size: 12px;
+    color: #ff0000;
+}
+.ConfirmOrderBTN{
     width: 100%;
     background-color: #ff0000;
     padding:10px 0px;
