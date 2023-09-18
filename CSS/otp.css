@@ -1,16 +1,4 @@
 
-#main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url("https://gumlet.assettype.com/afaqs%2F2022-05%2F793177dc-ad39-4d65-8131-7a5d67f4e328%2FUntitled_design___2022_05_17T123917_209.png?rect=0%2C0%2C1280%2C720&format=webp&w=400&dpr=2.6");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: rgb(226, 215, 215);
-}
-
 #firstChildDiv {
     position: relative;
 }
@@ -35,11 +23,6 @@
     /* border: 2px solid black; */
     margin: 0px;
     height: 803px;
-    background-image: url("https://gumlet.assettype.com/afaqs%2F2022-05%2F793177dc-ad39-4d65-8131-7a5d67f4e328%2FUntitled_design___2022_05_17T123917_209.png?rect=0%2C0%2C1280%2C720&format=webp&w=400&dpr=2.6");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  background-size: cover;
-    background-color: rgb(226, 215, 215);
 }
 #firstChildDiv{
     /* margin-right: 110px; */
@@ -51,9 +34,6 @@
     justify-content:center;
     text-align: center;
     align-items: center;
-    background-color: rgb(188, 217, 228);
-    box-shadow: 1px 1px 5px 1px rgb(151, 147, 147);
-    border-radius: 10px;
 }
 #firstChildDiv:hover{
     mix-blend-mode: normal;
@@ -78,20 +58,24 @@ strong{
     margin-bottom: 40px;
     width: 300px;
     height: 40px;
+    border-radius: 6px;
 }
 #submit{
-    width: 80px;
-    height:30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100px;
+    height:40px;
     margin-top: 30px;
     margin-bottom: 40px;
-    background-color: red;
+    background-color:#ff0000;
     border: 0px;
     margin-bottom: 100px;
+    border-radius: 6px;
 }
 #submit:hover{
     
     /* color: green; */
-    background-color: green;
     cursor: pointer;
     /* border: 0px; */
 }
@@ -116,7 +100,7 @@ h2{
     text-align:left;
 }
 h4{
-    color: green;
+    color: black;
 }
 #imgg{
     margin-top: 150px;
