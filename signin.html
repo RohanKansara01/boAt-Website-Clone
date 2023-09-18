@@ -8,23 +8,27 @@
     <link rel = "icon" href = 
 "https://www.appengine.ai/uploads/images/profile/logo/boAt-AI.png" 
         type = "image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Poppins:wght@100;200;300;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="main">
-    <div id="firstDiv">
-        <h3 id="textt">Sign In</h3>
-        <h5 id="textt">Get access to your Orders, Wishlist and Recommendations </h5>
-    </div>
     <div id="firstChildDiv">
-             <form>
-              <input id="email" type="email" placeholder="Email Id">
-              <!-- <br> -->
-              <input id="pass" type="password" placeholder="password">
-
-              <input type="submit" id="submit">
-            </form>
-            <a href="signup.html" id="NewUserSignInbtn"><p>New User ?</p></a>
-        </div>
+        <span>Enter your Registered Email and Password to <b>Login !</b></span>
+        <form>
+            <div class="input-tabs">
+                <p><b>Email :</b></p>
+                <input id="email" type="email" placeholder="Email Id">
+                <p><b>Password :</b></p>
+                <input id="pass" type="password" placeholder="Password">
+            </div>
+            <div class="firstChildDiv-btn">
+                <input type="checkbox" id="checkbox-singin" name="" value="">
+                <label for="">Remember me</label> <br>
+                <input type="submit" id="submit">
+            </div>
+        </form>
+        <a href="signup.html" id="NewUserSignInbtn"><p>New User ? <b>Sign Up </b>here</p></a>
+    </div>
 </div>
 </form>
 </body>
