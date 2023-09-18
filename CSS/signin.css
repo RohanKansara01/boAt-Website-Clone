@@ -3,11 +3,10 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    /* height: 799px; */
+    height: 700px;
     width: 60%;
-    padding: 0pc;
     margin: auto;
-    margin-top: 50px;
+    margin-top: -100px;
     align-content: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
