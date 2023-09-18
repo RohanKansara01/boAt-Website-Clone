@@ -18,7 +18,45 @@
     <!-- navbar -->
     <div id="navbar">
       <div class="logo-menu">
-        <div>
+        <div class="nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="menu-items">
+            <li><button type="button" class="collapse-menu">Categories</button>
+              <div class="content">
+                <a href="#">True Wireless Earbuds</a>
+                <a href="#">Wired Headphones</a>
+                <a href="#">Trimmers</a>
+                <a href="">Superhero Collections</a>
+                <a href="">Neckbands</a>
+                <a href="">Wired Earphones</a>
+                <a href="">Chargers</a>
+                <a href="">Trebel for Women</a>
+              </div>
+            </li>
+            <li><a href="">Daily Deals</a></li>
+            <li><a href="">Gift with boAt</a></li>
+            <li><a href="">Bulk Orders</a></li>
+            <li><button type="button" class="collapse-menu">More</button>
+              <div class="content">
+                <a href="#">Do What Floats your boAt</a>
+                <a href="#">Blogs</a>
+                <a href="#">Corporate Orders</a>
+                <a href="">Earn &#8377;100</a>
+                <a href="">Careers</a>
+                <a href="">Social Responsibilities</a>
+                <a href="">Store Locator</a>
+              </div>
+            </li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Cart</a></li>
+          </div>
+        </div>
+        <div class="homepage-logo">
           <a href="http://127.0.0.1:5500/shivering-need-4074/"><img src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434" alt="image"></a>
         </div>
         <div class="category-menu">
@@ -1009,7 +1047,22 @@
 </body>
 
 
-
+<script>
+  var coll = document.getElementsByClassName("collapse-menu");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
 <script src="./footer.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script>
