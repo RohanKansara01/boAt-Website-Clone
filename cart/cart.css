@@ -138,6 +138,7 @@
     width: 60%;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 .productsecond{
     width: 20%;
@@ -199,10 +200,8 @@
 }
 .quantityDiv{
     display: flex;
-    border: 1px solid rgba(199,199,199, 0.60);
-    border-radius: 5px;
-    width: 53%;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 .incrementDIV{
     padding: 4px 6px;
@@ -225,4 +224,29 @@
 }
 .decrementDiv p{
     color: #686868;
+}
+@media only screen and (max-width:1200px){
+    #cartMain{
+        width: 95%;
+    }
+}
+@media only screen and (max-width:800px){
+    #cartContainer{
+        display: block;
+    }
+    #leftSidecart{
+        width: 100%;
+    }
+    #rightSidecart{
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .productImage{
+        width: 40%;
+    }
+    .productTitle{
+        width: 50%;
+    }
 }
