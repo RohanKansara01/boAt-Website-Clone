@@ -8,11 +8,42 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Poppins:wght@100;200;300;500;600;700&display=swap"
         rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Airdopes131.css">
 </head>
 
 <body>
+    <div class="container">
+
+    </div>
+    <div class="belowcart">
+        <div class="policy">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-1b_6c0c5f7d-a48c-40f5-946d-ea50fb1a9b82_small.png?v=1661243559"
+                id="wlogo">
+            <p class="policytext"> 1 Year
+                Warranty</p>
+            <img
+                src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-3b_b82496cc-51ed-47ad-b27a-a195b646bea1_small.png?v=1661244593">
+            <p class="policytext"> 7 Days
+                Replacement</p>
+            <img
+                src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-2b_dc921406-33cc-4867-846b-293610d69a41_small.png?v=1661244611">
+            <p class="policytext"> Free
+                Shipping</p>
+            <img
+                src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-4b_1d19c7fb-8da7-407e-8612-946e106cc508_small.png?v=1661244611">
+            <p class="policytext"> Secure
+                Checkout</p>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-black-v1_small.png?v=1661245767">
+            <p class="policytext"> GST
+                Billing</p>
+        </div>
+    </div>
+    <div class="descriptionNav">
+        <h3>Description</h3>
+        <h3>Specification</h3>
+        <h3>Reviews</h3>
+    </div>
     <div id="productNameDiv">
         <div id="productNameDivInner">
             <h2>boAt Airdopes 131 - Wireless Earbuds</h2>
@@ -60,7 +91,7 @@
     </div>
     <div id="specificationDiv">
         <div id="specificationDiv1">
-            <div>
+            <div id="tableDiv">
                 <table width="452">
                     <tbody>
                         <tr>
@@ -254,6 +285,224 @@
                 your wireless earbuds. Please refer to the manual of the earbuds in the respective packaging for
                 precise specifications.</span></h4>
     </div>
+
+    <div id="blog">
+        <h3 id="blogTitle">bo<span>A</span>t BLOGS</h3>
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="blogChild">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/articles/sd.jpg?v=1659088152">
+                            <a href="#">
+                                <p>Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+    var product = JSON.parse(localStorage.getItem("product"));
+    console.log(product)
+    var ShowProduct = document.querySelector(".container");
+    var imgDiv = document.createElement("div");
+    imgDiv.setAttribute("class", "imgDiv")
+    var productImg = document.createElement("img");
+    productImg.setAttribute("class", "productImg")
+    productImg.src = product.image_url;
+    imgDiv.appendChild(productImg)
+
+    var detailDIV = document.createElement("div");
+    detailDIV.setAttribute("class", "detailDIV")
+
+    var ratingDiv = document.createElement("div");
+    ratingDiv.setAttribute("class", "ratingDiv")
+    var spanForIcon = document.createElement("span");
+    spanForIcon.setAttribute("class", "spanForIcon");
+    var review = document.createElement("p");
+    review.setAttribute("class", "review")
+    var rating = document.createElement("p")
+    rating.setAttribute("class", "ratingOfProduct")
+
+    var ProductName = document.createElement("h2");
+
+    var infromastion = document.createElement("div");
+    infromastion.setAttribute("id", "infromastion")
+    var specefication = document.createElement("h3");
+    specefication.setAttribute("id", "specefication");
+    var info1 = document.createElement("p");
+    info1.setAttribute("class", "productInfo")
+    var info2 = document.createElement("p");
+    info2.setAttribute("class", "productInfo")
+    var info3 = document.createElement("p");
+    info3.setAttribute("class", "productInfo")
+    var info4 = document.createElement("p");
+    info4.setAttribute("class", "productInfo")
+    var info5 = document.createElement("p");
+    info5.setAttribute("class", "productInfo")
+
+    specefication.innerText = "Specification";
+    info1.innerText = "> " + product.featureOne;
+    info2.innerText = "> " + product.featureTwo;
+    info3.innerText = "> 40 Hours Playback"
+    info4.innerText = "> BT Calling"
+    info5.innerText = "> ENx™ Algorithm"
+    infromastion.appendChild(specefication);
+    infromastion.appendChild(info1);
+    infromastion.appendChild(info2);
+    infromastion.appendChild(info3);
+    infromastion.appendChild(info4);
+    infromastion.appendChild(info5);
+
+    //Price Details Div
+    var priceDetails = document.createElement("div");
+    priceDetails.setAttribute("class", "priceDetails");
+    var price = document.createElement("p");
+    price.setAttribute("class", "salePrice");
+    var strikedoffprice = document.createElement("p");
+    strikedoffprice.setAttribute("class", "normalPrice");
+    var off = document.createElement("p");
+    off.setAttribute("class", "offerPercantage");
+    //add to cart
+    var buttonDiv = document.createElement("div");
+    buttonDiv.setAttribute("class", "buttonDiv")
+    var addToCartBtn = document.createElement("button");
+    addToCartBtn.setAttribute("class", "addToCartBtn")
+    //Coupen DIv
+    var useCoupen = document.createElement("div");
+    useCoupen.setAttribute("class", "useCoupen");
+    var coupenText = document.createElement("p");
+    coupenText.setAttribute("class", "coupenText")
+
+    coupenText.innerText = "Use 'Raghav' and Get 50% Off On Every Order"
+    strikedoffprice.innerText = product.strikedoffprice;
+    price.innerText = product.price;
+    off.innerText = product.off;
+    spanForIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f4c730}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>'
+    rating.innerText = product.rating;
+    review.innerText = "1304 reviews";
+    ProductName.innerText = product.name;
+    addToCartBtn.innerText = "Add To Cart"
+
+    useCoupen.appendChild(coupenText);
+    buttonDiv.appendChild(addToCartBtn);
+    priceDetails.appendChild(price)
+    priceDetails.appendChild(strikedoffprice);
+    priceDetails.appendChild(off)
+    ratingDiv.appendChild(spanForIcon);
+    ratingDiv.appendChild(rating);
+    ratingDiv.appendChild(review);
+    detailDIV.appendChild(ratingDiv);
+    detailDIV.appendChild(ProductName);
+    detailDIV.appendChild(infromastion);
+    detailDIV.appendChild(priceDetails);
+    detailDIV.appendChild(buttonDiv);
+    detailDIV.appendChild(useCoupen);
+    ShowProduct.appendChild(imgDiv)
+    ShowProduct.appendChild(detailDIV)
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('.splide', {
+            type: 'loop',
+            drag: 'free',
+            gap: '20px',
+            perPage: 4.5,
+            snap: true,
+            perMove: 2,
+            arrows: false,
+            pagination: false,
+            autoplay: true,
+            breakpoints: {
+                767: {
+                    perPage: 1,
+                    // gap: '.7rem',
+                    // height: '6rem',
+                },
+                1100: {
+                    perPage: 2,
+                    // gap: '.7rem',
+                    // height: '6rem',
+                },
+            },
+        }).mount();
+    });
+    addToCartBtn.addEventListener("click", function () {
+        var cartItem = JSON.parse(localStorage.getItem("cart")) || [];
+        var itemAlreadyInCart = cartItem.some(function (pro) {
+            return pro.name === product.name;
+        });
+        if (!itemAlreadyInCart) {
+            cartItem.push(product);
+            localStorage.setItem("cart", JSON.stringify(cartItem));
+            alert("Item added to the cart");
+            addToCartBtn.innerText = "Added in Cart";
+        } else {
+            alert("Item already in cart");
+        }
+    })
+</script>
 
 </html>

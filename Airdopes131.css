@@ -1,131 +1,425 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
-#productNameDiv{
+
+#productNameDiv {
     width: 100%;
     padding: 40px 0px;
 }
-#productNameDivInner{
+
+#productNameDivInner {
     width: 80%;
     margin: auto;
     text-align: center;
 }
-#productNameDivInner h2{
+
+#productNameDivInner h2 {
     font-size: 30px;
     padding: 10px 0px;
 }
-#productNameDivInner p{
+
+#productNameDivInner p {
     font-size: 15px;
     font-weight: 300;
     padding-bottom: 10px;
 }
-#productFirsrtDetailDiv{
+
+#productFirsrtDetailDiv {
     width: 100%;
     display: flex;
 }
-#productdiv1{
-    background: linear-gradient(to top,#a50921,#ed1d26)!important;
+
+#productdiv1 {
+    background: linear-gradient(to top, #a50921, #ed1d26) !important;
     width: 50%;
     padding: 0px 40px;
 }
-.imageTrasition{
+
+.imageTrasition {
     opacity: 1;
     text-align: center;
     transform: translateZ(0) scale(1);
 }
-.imageTrasition img{
+
+.imageTrasition img {
     max-width: 50%;
     margin: 0 auto;
 }
-.detailsTitle{
+
+.detailsTitle {
     margin: 40px 20px;
     color: #Ffffff;
     font-size: 30px;
 }
-.detailspara{
+
+.detailspara {
     margin: 20px 20px;
     color: #Ffffff;
     font-size: 15px;
     font-weight: 300;
 }
-#productdiv2{
-    background: linear-gradient(to top,#292929,#212121)!important;
+
+#productdiv2 {
+    background: linear-gradient(to top, #292929, #212121) !important;
     width: 50%;
     padding: 30px 40px 0px 40px;
 }
-#productsecondDetaildiv{
+
+#productsecondDetaildiv {
     width: 100%;
-    background: linear-gradient(to top,#a50921,#ed1d26)!important;
+    background: linear-gradient(to top, #a50921, #ed1d26) !important;
     display: flex;
     align-items: center;
 }
-#productsecondDetaildiv>div{
+
+#productsecondDetaildiv>div {
     width: 50%;
 }
-#specificationDiv{
-    background-image: linear-gradient(to top,#7e0003,rgba(110,1,1,0)),linear-gradient(to bottom,#590000,#590000)!important;
-    width: 100%;
-    padding: 0px 40px;
+
+#specificationDiv {
+    background-image: linear-gradient(to top, #7e0003, rgba(110, 1, 1, 0)), linear-gradient(to bottom, #590000, #590000) !important;
     display: flex;
-    align-items: center
+    align-items: center;
+    width: 100%;
 }
-#specificationDiv1{
+
+#specificationDiv1 {
     padding: 0px 50px;
+    width: 50%;
 }
-#specificationDiv1>div{
+
+#tableDiv {
     background-color: #000000;
     padding: 20px 40px;
 }
-#specificationDiv1>div p{
+
+#specificationDiv1>div p {
     font-size: 16px;
     font-weight: 300;
 }
-#specificationDiv2{
+
+#specificationDiv2 {
     width: 50%;
 }
-#productthirdDetaildiv{
+
+#productthirdDetaildiv {
     width: 100%;
     display: flex;
 }
-#productthirdDetaildiv1{
+
+#productthirdDetaildiv1 {
     width: 75%;
     display: flex;
     align-items: center;
     background-image: linear-gradient(to top, #292929, #212121);
     padding: 40px 40px 40px 0px;
 }
-#productthirdDetaildiv1child1{
+
+#productthirdDetaildiv1child1 {
     width: 40%;
 }
-#productthirdDetaildiv1child1 img{
+
+#productthirdDetaildiv1child1 img {
     width: 100%;
 }
-#productthirdDetaildiv1child2{
+
+#productthirdDetaildiv1child2 {
     width: 60%;
 }
-#productthirdDetaildiv2{
+
+#productthirdDetaildiv2 {
     width: 25%;
     background-color: #3c3c3c;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#FAQdiv{
+
+#FAQdiv {
     width: 50%;
     margin: auto;
+    padding: 60px 0px;
 }
+
 #FAQdiv h4 {
     font-style: italic;
     color: gray;
     font-weight: bold;
     margin-bottom: 25px;
 }
+
 .ans {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     color: rgb(172, 168, 168);
 }
-  
+
+#blog {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+#blogTitle {
+    color: #1A2024;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0px 20px 0px;
+}
+
+#blogTitle span {
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.blogChild {
+    text-align: left;
+}
+
+.blogChild img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blogChild a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+.blogChild p:hover {
+    color: red;
+}
+
+.blogChild p {
+    font-size: 14px;
+    color: #1A2024;
+    font-weight: 400;
+    padding-top: 5px;
+    opacity: 0.80;
+}
+
+
+.policy {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    background-color: #e8edf0;
+}
+
+.policy img {
+    width: 60px;
+}
+
+.policy img+p {
+    margin-left: -90px;
+}
+
+.descriptionNav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 20% 20px 20%;
+    background-color: black;
+    color: white;
+}
+
+.descriptionNav>h3 {
+    color: rgb(168, 165, 165);
+    cursor: pointer;
+}
+
+.descriptionNav>h3:hover {
+    color: red;
+}
+
+.description {
+    text-align: center;
+    padding: 10px 10% 10px 10%;
+}
+/* Product Page Dyanmic */
+.container{
+    width: 100%;
+    padding: 20px 70px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.imgDiv{
+    width: 50%;
+    text-align: center;
+}
+.productImg{
+    border-radius: 10px;
+    width: 80%;
+}
+.detailDIV{
+    width: 50%;
+}
+.ratingDiv {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.spanForIcon {
+    font-size: 16px;
+}
+
+.ratingOfProduct {
+    font-size: 12px;
+    font-weight: 500;
+}
+.review{
+    margin-left: 4px;
+    padding-left: 5px;
+    font-size: 12px!important;
+    opacity: 0.70;
+    border-left: 1px solid rgba(199,199,199, 0.60);
+}
+.productInfo{
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.48px;
+    text-align: left;
+    color: #4a5157;
+    display:block;
+}
+#specefication{
+    color: #ff0000;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.priceDetails {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 10px 5px;
+    gap: 10px;
+}
+.salePrice {
+    font-size: 30px;
+    font-weight: 700;
+    display: inline;
+    padding-right: 5px;
+}
+.normalPrice {
+    display: inline;
+    font-size: 20px;
+    text-decoration: line-through;
+    opacity: 0.65;
+    font-weight: 600;
+    padding-right: 5px;
+}
+.offerPercantage {
+    display: inline;
+    font-size: 25pxpx;
+    font-weight: 700;
+    color: #12b985;
+
+}
+.buttonDiv {
+    width: 100%;
+    margin-top: 20px
+}
+.useCoupen{
+    width: 60%;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #fcf2cf;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.coupenText{
+    font-size: 15px;
+    font-weight: 600;
+}
+.addToCartBtn {
+    width: 50%;
+    background-color: #ff0000;
+    color: white;
+    padding: 8px 0px;
+    border-radius: 8px;
+    border: none;
+}
+@media only screen and (max-width: 1080px) {
+
+    .container{
+        padding: 10px 10px;
+    }
+    .policytext {
+        display: none;
+    }
+    #specificationDiv2{
+        display: none;
+    }
+    #specificationDiv1{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:767px) {
+
+    #specificationDiv1{
+        width: 95%;
+        padding: 0px;
+        margin: auto;
+    }
+    #specificationDiv1>div p{
+        font-size: 14px;
+    }
+    #productFirsrtDetailDiv{
+        display: block;
+    }
+    #productdiv1{
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+    #productdiv2{
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    #productthirdDetaildiv1{
+        width: 100%;
+    }
+    #productthirdDetaildiv2{
+        display: none;
+    }
+    #FAQdiv{
+        width: 80%;
+        margin: auto;
+    }
+    .container{
+        display: block;
+    }
+    .imgDiv{
+        width: 100%;
+        text-align: center;
+    }
+    .detailDIV{
+        padding: 20px 40px;
+        width: 100%;
+    }
+    .addToCartBtn{
+        width: 100%;
+    }
+    .useCoupen{
+        width: 100%;
+    }
+}

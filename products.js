@@ -139,11 +139,13 @@ function displayProducts(data) {
             if (!itemAlreadyInCart) {
                 cartItem.push(element);
                 localStorage.setItem("cart", JSON.stringify(cartItem));
-                alert("Item added to the cart");
                 addToCartBtn.innerText = "Added in Cart";
             } else {
                 alert("Item already in cart");
             }
+        })
+        productDiv.addEventListener("click", function(){
+            localStorage.setItem("product", JSON.stringify(element));
         })
     });
 }
