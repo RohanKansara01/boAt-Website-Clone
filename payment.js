@@ -65,8 +65,8 @@ formPayment.addEventListener("submit" , (event)=>{
        if(obj2.CARDCVV==""  || obj2.CARDMONTH=="" || obj2.CARDNUM=="" || obj2.CARDYEAR=="Choose Year...."){
         alert("Please fill the Card Details");
        }else{
-        alert("Payment Done");
-        window.location.href="page.html";
+        alert("Payment Done Your order ID is #809424");
+        window.location.href="index.html";
        }
    })
    
@@ -89,8 +89,8 @@ formPayment.addEventListener("submit" , (event)=>{
    function PAYMENTBTN(){
     let PAYMENTOTP = document.querySelector("#PAYMENTOTP").value;
     if(PAYMENTOTP=="2630"){
-        alert("Order successfull");
-        window.location.href="page.html";
+        alert("Order successfull Your Order Id is #806541");
+        window.location.href="index.html";
     }else{
         alert("Invalid Otp");
     }

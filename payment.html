@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link rel="stylesheet" href="cart.css">
-    <link rel="stylesheet" href="/shivering-need-4074/footer.css">
-    <link rel="stylesheet" href="/shivering-need-4074/navbar.css">
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="./payment.css">
+    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/navbar.css">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Poppins:wght@100;200;300;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://www.appengine.ai/uploads/images/profile/logo/boAt-AI.png" type= "image/x-icon">
+    <link rel = "icon" href = "https://www.appengine.ai/uploads/images/profile/logo/boAt-AI.png" type = "image/x-icon">
 </head>
-
-<body>
+<body id="PAYMENTBODY">
     <div id="announcement-bar">
         <header>Navigate your life on our <b>largest round HD display - 1.52"</b>. Buy <b>Lunar Vista</b> now!</header>
     </div>
@@ -60,7 +58,7 @@
           </div>
         </div>
         <div class="homepage-logo">
-          <a href="http://127.0.0.1:5500/shivering-need-4074/"><img src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434" alt="image"></a>
+          <a href="index.html"><img src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434" alt="image"></a>
         </div>
         <div class="category-menu">
           <div class="dropdown">
@@ -130,60 +128,108 @@
           </button>
         </div>
         <div class="login-cart-icon">
-          <a href="./signin.html"> <img class="loginimage" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="cart"></a>
-          <a href="cart/cart.html"> <img class="cartimage" src="https://cdn0.iconfinder.com/data/icons/commerce-outline/512/shopping_bag-512.png" alt="profile"></a>
+          <a href="signin.html"> <img class="loginimage" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="cart"></a>
+          <a href="cart.html"> <img class="cartimage" src="https://cdn0.iconfinder.com/data/icons/commerce-outline/512/shopping_bag-512.png" alt="profile"></a>
         </div>
       </div>
 
 
     </div>
-
-    <div id="cartMain">
-        <h1>Cart</h1>
-        <div id=cartContainer>
-            <div id="leftSidecart">
-                <div id="titleCart">
-                    <div id="firstChild">
-                        <p class="detailsHeading">Product</p>
+    <header id="PaymentHeader">
+        <!-- <div id="DIVPOP">
+            <h3 id="H3PAYMENT">Payment Successfull</h3>
+        </div> -->
+        <div class="Paymentcontainer">
+           
+            <div class="leftpaymentdiv">
+                <h3 id="paymentH3">BILLING ADDRESS</h3>
+                <form id="paymentFormLeft">
+                    Full name
+                    <input id="paymentname" type="text" name="" placeholder="Enter name">
+                    Mobile No
+                    <input id="paymentEMAIL" type="number" name="" placeholder="Enter Number">
+                    Address
+                    <input id="paymentAddress" type="text" name="" placeholder="Enter Address">
+                    City
+                    <input id="paymentCity" type="text" name="" placeholder="Enter City">
+                    <div id="paymentState">
+                    <label>
+                        State
+                        <select id="paymentSelect">
+                            <option>Choose State....</option>
+                            <option>Maharashtra</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Rajasthan</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Madhya Pradehs</option>
+                            <option>Hariyana</option>
+                            <option>Uttarakhand</option>
+                        </select>
+                    </label>
+                        <label>
+                            Zip Code
+                            <input id="paymentZip" type="number" name="" placeholder="Zip code">
+                        </label>
+                        
                     </div>
-                    <div id="secondchild">
-                        <p class="detailsHeading">Quantity</p>
-                    </div>
-                    <div id="thirdchild">
-                        <p class="detailsHeading">Price</p>
-                    </div>
-                </div>
-                <div id="showCartDetails">
-
-                </div>
+                    <input id="SubmitPayment" type="submit" name="" value="Submit">
+                </form>
             </div>
-            <div id="rightSidecart">
-                <div id="rightsideDetails">
-                    <div>
-                        <h4>Total</h4>
+            <div class="rightpaymentdiv">
+                <div id="TotalPrice">
+                    <div id="ChildTotalPrice">
+                        <h4 class="H4TOTAl">Order Value :- </h4>
                     </div>
-                    <div id="totalPrice">
-                        <!-- Total will be appende here -->
-                    </div>
-                </div>
-                <p>Shipping and Taxes calculated At Checkout</p>
-                <div id="rightSidebtn">
-                    <button class="ConfirmOrderBTN">Confirm Order</button>
-                    <button class="ConfirmOrderBTN">Pay with Card</button>
-                </div>
-                <div id="coupenDiv">
-                    <div id="coupenInput">
-                        <p>Coupons and offers</p>
-                        <input type="text" id="Entercoupen" placeholder="Use 'Raghav' To Get 50% OFF">
-                        <button id="coupensubmitBtn">Submit Coupon</button>
-                    </div>
-                    <div id="coupenOutput">
+                    <div id="SecoundChildPrice">
 
                     </div>
                 </div>
+                <h3 id="paymentH3">PAYMENT</h3><br>
+                <input id="CheckBOX1" type="checkbox" onclick="CHECKBOX2()" name="COD" value="COD"> COD<br>
+                <input id="CheckBOX2" type="checkbox" onclick="CHECKBOX1()" name="CARD" value="CARD">
+                Card Payment<br>
+                <form id="paymentFormRight">
+                    
+                    <img src="https://pngimg.com/d/visa_PNG17.png" width="100">
+                    <img src="https://www.ucobank.com/images/select.png" width="50">
+                    <br><br>
+                    
+                    Credit card number
+                    <input id="paymentNUM" type="number" name="" placeholder="Enter card number">
+
+                    Exp month
+                    <input id="paymentMONTH" type="number" name="" placeholder="Enter Month">
+                  
+                    <div id="paymentCARDD">
+                    <label>
+                        Exp year
+                        <select id="paymentSelect">
+                            <option>Choose Year....</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                        </select>
+                    </label><br>
+                        <label>
+                            CVV
+                            <input id="paymentCVV" type="number" name="" placeholder="CVV">
+                        </label>
+                    </div>
+                    <input id="paymentCLICK" type="submit" name="" value="Make Payment"> 
+                </form>
+            <div id="PAYMENTDIVOTP">
+                <input id="PAYMENTOTP" type="number" placeholder="   Enter Otp">
+                <button id="PAYMENTBTN" onclick="PAYMENTBTN()">Submit</button>
+                
+            </div>
+            <button id="paymentC" onclick="PROCEEDTOPAYMENT()">Confirm Order</button>
             </div>
         </div>
-    </div>
+    </header>
       <!-- footer -->
   <div class="headfooterDiv">
     <div class="ChiledfooterDiv">
@@ -543,193 +589,10 @@
 
     
 </div>
+    
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var showCart = document.querySelector("#showCartDetails");
-        var CartDATA = JSON.parse(localStorage.getItem("cart")) || [];
-
-        if (CartDATA.length === 0) {
-            var noItems = document.createElement("h3");
-            noItems.setAttribute("id", "noitem");
-            noItems.innerText = "No Items in Cart";
-            showCart.appendChild(noItems);
-        } else {
-            displayCart(CartDATA);
-        }
-    });
-    var cartTotal = 0;
-    var orderValue = 0;
-    var ShowtotalPrice = document.querySelector("#totalPrice");
-    var totacartPrice = document.createElement("h3");
-
-    function displayCart(data) {
-        var showcartProduct = document.querySelector("#showCartDetails");
-
-        totacartPrice.innerText = "₹ " + cartTotal;
-        ShowtotalPrice.appendChild(totacartPrice);
-
-        data.forEach(element => {
-            var ProductDiv = document.createElement("div");
-            ProductDiv.setAttribute("class", "ProductDiv");
-
-            var productfirst = document.createElement("div");
-            productfirst.setAttribute("class", "productfirst");
-            var productsecond = document.createElement("div");
-            productsecond.setAttribute("class", "productsecond");
-            var productThird = document.createElement("div");
-            productThird.setAttribute("class", "productThird");
-
-            //productfirst Div's content
-            var productImage = document.createElement("div");
-            productImage.setAttribute("class", "productImage")
-            var productTitle = document.createElement("div");
-            productTitle.setAttribute("class", "productTitle");
-            var img = document.createElement("img");
-            img.setAttribute("class", "SimgleProductImage");
-            var title = document.createElement("h3");
-            title.setAttribute("class", "singleProducttitle");
-            var category = document.createElement("p");
-            category.setAttribute("class", "showCatrgoryINCart");
-            var pricing = document.createElement("p");
-            pricing.setAttribute("class", "productPricing");
-            var remove = document.createElement("p");
-            remove.setAttribute("class", "productRemoveBTN")
-
-
-            // Product div second content 
-            var count = 1;
-            var quantityDiv = document.createElement("div");
-            quantityDiv.setAttribute("class", "quantityDiv")
-            var incrementDIV = document.createElement("div");
-            incrementDIV.setAttribute("class", "incrementDIV")
-            var currentValue = document.createElement("div");
-            currentValue.setAttribute("class", "currentValue")
-            var decrementDiv = document.createElement("div");
-            decrementDiv.setAttribute("class", "decrementDiv")
-            var increment = document.createElement("p")
-            var current = document.createElement("p")
-            var decrement = document.createElement("p")
-
-            //Product div third div content
-            var PriceShow = document.createElement("h4");
-            PriceShow.setAttribute("class", "PriceShow")
-            var StrikerPrice = document.createElement("p");
-            StrikerPrice.setAttribute("class", "StrikerPrice");
-            var offShow = document.createElement("p");
-            offShow.setAttribute("class", "offOnProduct")
-
-
-            img.src = element.image_url;
-            title.innerText = element.name;
-            category.innerText = "Category : " + element.category;
-            pricing.innerText = "Price " + element.price;
-            remove.innerText = "Remove From Cart";
-
-            increment.innerText = "+";
-            current.innerText = count;
-            decrement.innerText = "-"
-
-            PriceShow.innerText = element.price;
-            StrikerPrice.innerText = element.strikedoffprice;
-            offShow.innerText = element.off;
-
-            productImage.appendChild(img);
-            productTitle.appendChild(title);
-            productTitle.appendChild(category);
-            productTitle.appendChild(pricing);
-            productTitle.appendChild(remove);
-
-            incrementDIV.appendChild(increment);
-            currentValue.appendChild(current);
-            decrementDiv.appendChild(decrement);
-            quantityDiv.appendChild(incrementDIV);
-            quantityDiv.appendChild(currentValue);
-            quantityDiv.appendChild(decrementDiv);
-
-            productThird.appendChild(PriceShow);
-            productThird.appendChild(StrikerPrice);
-            productThird.appendChild(offShow);
-            productsecond.appendChild(quantityDiv);
-            productfirst.appendChild(productImage);
-            productfirst.appendChild(productTitle);
-
-            ProductDiv.appendChild(productfirst);
-            ProductDiv.appendChild(productsecond);
-            ProductDiv.appendChild(productThird);
-
-            showcartProduct.appendChild(ProductDiv);
-            var priceString = element.price.replace(/[^0-9]/g, "");
-            var productPrice = parseInt(priceString);
-            cartTotal += productPrice;
-
-            remove.addEventListener("click", function () {
-                var selectProduct = this.parentElement.parentElement.parentElement;
-                selectProduct.remove();
-                var productName = element.name;
-                removeFromLocalStorage(productName);
-                updateTotal(-productPrice);
-            })
-
-            incrementDIV.addEventListener("click", function () {
-                count++;
-                current.innerText = count;
-                updateTotal(+productPrice);
-            })
-            decrementDiv.addEventListener("click", function () {
-                count--;
-                current.innerText = count;
-                updateTotal(-productPrice);
-            })
-            totacartPrice.innerText = "₹ " + cartTotal;
-            orderValue = cartTotal;
-
-            function updateTotal(itemPrice) {
-                cartTotal += itemPrice;
-                totacartPrice.innerText = "₹ " + cartTotal;
-                orderValue = cartTotal;
-            }
-            function removeFromLocalStorage(productName) {
-                var CartDATA = JSON.parse(localStorage.getItem("cart")) || [];
-                var updatedCart = CartDATA.filter(item => item.name !== productName);
-                localStorage.setItem("cart", JSON.stringify(updatedCart));
-            }
-        });
-    }
-
-    var couponBtn = document.querySelector("#coupensubmitBtn");
-    var coupenOutput = document.querySelector("#coupenOutput");
-    var coupenSuccess = document.createElement("p");
-    coupenSuccess.setAttribute("id", "coupenSuccess");
-    var coupenWrong = document.createElement("p");
-    coupenWrong.setAttribute("id", "coupenWrong")
-
-    couponBtn.addEventListener("click", function () {
-        var coupen = document.querySelector("#Entercoupen").value;
-        var off = Math.floor(cartTotal * 0.5);
-        coupenWrong.innerText = "";
-        coupenSuccess.innerText = "";
-        if (coupen === "Raghav") {
-            var newCartValue = cartTotal - off;
-            orderValue = newCartValue;
-            totacartPrice.innerText = "₹ " + newCartValue;
-            coupenSuccess.innerText = "You Saved " + off + "₹ With This Coupon"
-            coupenOutput.appendChild(coupenSuccess)
-        } else {
-            coupenWrong.innerText = "Wrong Coupon";
-            coupenOutput.appendChild(coupenWrong);
-        }
-
-    })
-    var confirmOrderButtons = document.querySelectorAll(".ConfirmOrderBTN");
-
-    confirmOrderButtons.forEach(function (button) {
-        button.addEventListener("click", function () {
-            localStorage.setItem("OrderValue", orderValue);
-            window.location.href = "/Payment/payment.html";
-        });
-    });
-</script>
+</html>
+<script src="./payment.js"></script>
 <script>
     var coll = document.getElementsByClassName("collapse-menu");
     var i;
@@ -763,5 +626,3 @@
         console.log(val)
     })
   </script>
-<!-- Problem -->
-</html>

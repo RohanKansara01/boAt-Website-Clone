@@ -37,7 +37,7 @@ function checkOtp() {
         wrongotp.innerText = "Enter otp"
     } else if (input === otp) {
         
-        window.location.href = "signin.html";
+        window.location.href = "index.html";
     } else {
         wrongotp.style.color="black"
         wrongotp.innerText = "Invalid otp !!!"

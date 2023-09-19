@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="homepage-logo">
-          <a href="http://127.0.0.1:5500/shivering-need-4074/"><img src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434" alt="image"></a>
+          <a href="index.html"><img src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434" alt="image"></a>
         </div>
         <div class="category-menu">
           <div class="dropdown">
@@ -133,8 +133,8 @@
           </button>
         </div>
         <div class="login-cart-icon">
-          <a href="./signin.html"> <img class="loginimage" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="cart"></a>
-          <a href="cart/cart.html"> <img class="cartimage" src="https://cdn0.iconfinder.com/data/icons/commerce-outline/512/shopping_bag-512.png" alt="profile"></a>
+          <a href="signin.html"> <img class="loginimage" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="cart"></a>
+          <a href="cart.html"> <img class="cartimage" src="https://cdn0.iconfinder.com/data/icons/commerce-outline/512/shopping_bag-512.png" alt="profile"></a>
         </div>
       </div>
 
@@ -982,9 +982,9 @@
             cartItem.push(product);
             localStorage.setItem("cart", JSON.stringify(cartItem));
             addToCartBtn.innerText = "Added in Cart";
-            window.location.href = "/cart/cart.html";
+            window.location.href = "cart.html";
         } else {
-            window.location.href = "/cart/cart.html";
+            window.location.href = "cart.html";
         }
     })
 
