@@ -24,7 +24,7 @@ https://github.com/Narsimmayemul <br/>
 
 # Work Done:-
 Rohan - Homepage with Navbar, structuring and styling of Signup, Signin and Otp page. <br/>
-Raghav - Porduct Page, Detailed Product Page and Cart Page. <br/>
+Raghav - Product Page, Detailed Product Page and Cart Page. <br/>
 Narsimma - Payment Page, Footer and functionality of Sign in, Sign up and Otp page. <br/>
 
 # Project:-
