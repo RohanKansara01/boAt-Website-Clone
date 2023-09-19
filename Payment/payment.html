@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment page</title>
+    <link rel="stylesheet" type="text/css" href="./payment.css">
+</head>
+<body id="PAYMENTBODY">
+    <header id="PaymentHeader">
+        <!-- <div id="DIVPOP">
+            <h3 id="H3PAYMENT">Payment Successfull</h3>
+        </div> -->
+        <div class="Paymentcontainer">
+           
+            <div class="leftpaymentdiv">
+                <h3 id="paymentH3">BILLING ADDRESS</h3>
+                <form id="paymentFormLeft">
+                    Full name
+                    <input id="paymentname" type="text" name="" placeholder="Enter name">
+                    Mobile No
+                    <input id="paymentEMAIL" type="number" name="" placeholder="Enter Number">
+                    Address
+                    <input id="paymentAddress" type="text" name="" placeholder="Enter Address">
+                    City
+                    <input id="paymentCity" type="text" name="" placeholder="Enter City">
+                    <div id="paymentState">
+                    <label>
+                        State
+                        <select id="paymentSelect">
+                            <option>Choose State....</option>
+                            <option>Maharashtra</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Rajasthan</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Madhya Pradehs</option>
+                            <option>Hariyana</option>
+                            <option>Uttarakhand</option>
+                        </select>
+                    </label>
+                        <label>
+                            Zip Code
+                            <input id="paymentZip" type="number" name="" placeholder="Zip code">
+                        </label>
+                        
+                    </div>
+                    <input id="SubmitPayment" type="submit" name="" value="Submit">
+                </form>
+            </div>
+            <div class="rightpaymentdiv">
+                <div id="TotalPrice">
+                    <div id="ChildTotalPrice">
+                        <h4 class="H4TOTAl">Order Value :- </h4>
+                    </div>
+                    <div id="SecoundChildPrice">
+
+                    </div>
+                </div>
+                <h3 id="paymentH3">PAYMENT</h3><br>
+                <input id="CheckBOX1" type="checkbox" onclick="CHECKBOX2()" name="COD" value="COD"> COD<br>
+                <input id="CheckBOX2" type="checkbox" onclick="CHECKBOX1()" name="CARD" value="CARD">
+                Card Payment<br>
+                <form id="paymentFormRight">
+                    
+                    <img src="https://pngimg.com/d/visa_PNG17.png" width="100">
+                    <img src="https://www.ucobank.com/images/select.png" width="50">
+                    <br><br>
+                    
+                    Credit card number
+                    <input id="paymentNUM" type="number" name="" placeholder="Enter card number">
+
+                    Exp month
+                    <input id="paymentMONTH" type="number" name="" placeholder="Enter Month">
+                  
+                    <div id="paymentCARDD">
+                    <label>
+                        Exp year
+                        <select id="paymentSelect">
+                            <option>Choose Year....</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                        </select>
+                    </label><br>
+                        <label>
+                            CVV
+                            <input id="paymentCVV" type="number" name="" placeholder="CVV">
+                        </label>
+                    </div>
+                    <input id="paymentCLICK" type="submit" name="" value="Make Payment"> 
+                </form>
+            <div id="PAYMENTDIVOTP">
+                <input id="PAYMENTOTP" type="number" placeholder="   Enter Otp">
+                <button id="PAYMENTBTN" onclick="PAYMENTBTN()">Submit</button>
+                
+            </div>
+            <button id="paymentC" onclick="PROCEEDTOPAYMENT()">Confirm Order</button>
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>
+<script src="./payment.js"></script>
