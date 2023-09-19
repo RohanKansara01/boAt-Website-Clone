@@ -1,0 +1,252 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#cartMain{
+    width: 70%;
+    margin: auto;
+    padding: 70px 0px;
+    
+}
+#cartMain>h1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+#cartContainer{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 40px 0px;
+}
+#leftSidecart{
+    width: 65%;
+}
+#rightSidecart{
+    width: 35%;
+    padding: 40px;
+    background-color: #c7c7c7;;
+}
+#titleCart{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(199,199,199, 0.60);
+    border-top: 1px solid rgba(199,199,199, 0.60);
+    padding: 6px 10px;
+    margin-bottom: 5px;
+}
+#firstChild{
+    width: 60%;
+    text-align: left;
+}
+#secondchild{
+    width: 20%;
+    text-align: center;
+}
+#thirdchild{
+    width: 20%;
+    text-align: right;
+}
+.detailsHeading{
+    font-size: 13px;
+    font-weight: 600;
+    color: #686868;
+}
+#rightsideDetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+#rightsideDetails{
+    color: #000000;
+    font-size: 20px;
+
+}
+#rightSidecart>p{
+    font-size: 12px;
+    font-weight: 500px;
+    color: #555555;
+    margin-bottom: 15px
+;
+}
+#rightSidebtn{
+    width: 100%;
+}
+#coupenInput{
+    width: 100%;
+}
+#coupenInput>p{
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+#Entercoupen{
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 6px;
+    margin-bottom: 10px;
+}
+#coupensubmitBtn{
+    width: 100%;
+    background-color: #ff0000;
+    padding:10px 0px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+}
+#coupenSuccess{
+    font-size: 12px;
+    color: #00922e;
+}
+#coupenWrong{
+    font-size: 12px;
+    color: #ff0000;
+}
+.ConfirmOrderBTN{
+    width: 100%;
+    background-color: #ff0000;
+    padding:10px 0px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+/* DOM CSS */
+#noitem{
+    text-align: center;
+    width: 100%;
+    color: #ff0000;
+    font-size: 20px;
+    padding-top: 70px;
+}
+.ProductDiv{
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+}
+.productfirst{
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.productsecond{
+    width: 20%;
+}
+.productThird{
+    width: 20%;
+    text-align: right;
+    align-items: center;
+    align-content: center;
+}
+.productImage{
+    width: 30%;
+}
+.productTitle{
+    width: 70%;
+    padding: 10px 0px;
+}
+.SimgleProductImage{
+    width: 100%;
+    border-radius: 10px;
+}
+.singleProducttitle{
+    font-size: 18px;
+    font-weight: 600;
+}
+.showCatrgoryINCart{
+    padding: 6px 0px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #686868;
+}
+.productPricing{
+    padding: 6px 0px;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 600;
+}
+.productRemoveBTN{
+    text-decoration: underline;
+    color: black;
+    padding: 8px 0px;
+    font-size: 12px;
+}
+.PriceShow{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+}
+.StrikerPrice{
+    color: #686868;
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+.offOnProduct{
+    font-size: 12px;
+    font-weight: 700;
+    color: #12b985;
+}
+.quantityDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.incrementDIV{
+    padding: 4px 6px;
+    border-right: 1px solid rgba(199,199,199, 0.60);
+}
+.incrementDIV p{
+    color: #686868;
+}
+.currentValue{
+    padding: 4px 8px;
+    border-right: 1px solid rgba(199,199,199, 0.60);
+}
+.currentValue p{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+}
+.decrementDiv{
+    padding: 4px 6px;
+}
+.decrementDiv p{
+    color: #686868;
+}
+@media only screen and (max-width:1200px){
+    #cartMain{
+        width: 95%;
+    }
+}
+@media only screen and (max-width:800px){
+    #cartContainer{
+        display: block;
+    }
+    #leftSidecart{
+        width: 100%;
+    }
+    #rightSidecart{
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .productImage{
+        width: 40%;
+    }
+    .productTitle{
+        width: 50%;
+    }
+}

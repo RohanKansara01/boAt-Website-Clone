@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Poppins:wght@100;200;300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.appengine.ai/uploads/images/profile/logo/boAt-AI.png" type= "image/x-icon">
+</head>
+
+<body>
+    <div id="cartMain">
+        <h1>Cart</h1>
+        <div id=cartContainer>
+            <div id="leftSidecart">
+                <div id="titleCart">
+                    <div id="firstChild">
+                        <p class="detailsHeading">Product</p>
+                    </div>
+                    <div id="secondchild">
+                        <p class="detailsHeading">Quantity</p>
+                    </div>
+                    <div id="thirdchild">
+                        <p class="detailsHeading">Price</p>
+                    </div>
+                </div>
+                <div id="showCartDetails">
+
+                </div>
+            </div>
+            <div id="rightSidecart">
+                <div id="rightsideDetails">
+                    <div>
+                        <h4>Total</h4>
+                    </div>
+                    <div id="totalPrice">
+                        <!-- Total will be appende here -->
+                    </div>
+                </div>
+                <p>Shipping and Taxes calculated At Checkout</p>
+                <div id="rightSidebtn">
+                    <button class="ConfirmOrderBTN">Confirm Order</button>
+                    <button class="ConfirmOrderBTN">Pay with Card</button>
+                </div>
+                <div id="coupenDiv">
+                    <div id="coupenInput">
+                        <p>Coupons and offers</p>
+                        <input type="text" id="Entercoupen" placeholder="Use 'Raghav' To Get 50% OFF">
+                        <button id="coupensubmitBtn">Submit Coupon</button>
+                    </div>
+                    <div id="coupenOutput">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var showCart = document.querySelector("#showCartDetails");
+        var CartDATA = JSON.parse(localStorage.getItem("cart")) || [];
+
+        if (CartDATA.length === 0) {
+            var noItems = document.createElement("h3");
+            noItems.setAttribute("id", "noitem");
+            noItems.innerText = "No Items in Cart";
+            showCart.appendChild(noItems);
+        } else {
+            displayCart(CartDATA);
+        }
+    });
+    var cartTotal = 0;
+    var orderValue = 0;
+    var ShowtotalPrice = document.querySelector("#totalPrice");
+    var totacartPrice = document.createElement("h3");
+
+    function displayCart(data) {
+        var showcartProduct = document.querySelector("#showCartDetails");
+
+        totacartPrice.innerText = "₹ " + cartTotal;
+        ShowtotalPrice.appendChild(totacartPrice);
+
+        data.forEach(element => {
+            var ProductDiv = document.createElement("div");
+            ProductDiv.setAttribute("class", "ProductDiv");
+
+            var productfirst = document.createElement("div");
+            productfirst.setAttribute("class", "productfirst");
+            var productsecond = document.createElement("div");
+            productsecond.setAttribute("class", "productsecond");
+            var productThird = document.createElement("div");
+            productThird.setAttribute("class", "productThird");
+
+            //productfirst Div's content
+            var productImage = document.createElement("div");
+            productImage.setAttribute("class", "productImage")
+            var productTitle = document.createElement("div");
+            productTitle.setAttribute("class", "productTitle");
+            var img = document.createElement("img");
+            img.setAttribute("class", "SimgleProductImage");
+            var title = document.createElement("h3");
+            title.setAttribute("class", "singleProducttitle");
+            var category = document.createElement("p");
+            category.setAttribute("class", "showCatrgoryINCart");
+            var pricing = document.createElement("p");
+            pricing.setAttribute("class", "productPricing");
+            var remove = document.createElement("p");
+            remove.setAttribute("class", "productRemoveBTN")
+
+
+            // Product div second content 
+            var count = 1;
+            var quantityDiv = document.createElement("div");
+            quantityDiv.setAttribute("class", "quantityDiv")
+            var incrementDIV = document.createElement("div");
+            incrementDIV.setAttribute("class", "incrementDIV")
+            var currentValue = document.createElement("div");
+            currentValue.setAttribute("class", "currentValue")
+            var decrementDiv = document.createElement("div");
+            decrementDiv.setAttribute("class", "decrementDiv")
+            var increment = document.createElement("p")
+            var current = document.createElement("p")
+            var decrement = document.createElement("p")
+
+            //Product div third div content
+            var PriceShow = document.createElement("h4");
+            PriceShow.setAttribute("class", "PriceShow")
+            var StrikerPrice = document.createElement("p");
+            StrikerPrice.setAttribute("class", "StrikerPrice");
+            var offShow = document.createElement("p");
+            offShow.setAttribute("class", "offOnProduct")
+
+
+            img.src = element.image_url;
+            title.innerText = element.name;
+            category.innerText = "Category : " + element.category;
+            pricing.innerText = "Price " + element.price;
+            remove.innerText = "Remove From Cart";
+
+            increment.innerText = "+";
+            current.innerText = count;
+            decrement.innerText = "-"
+
+            PriceShow.innerText = element.price;
+            StrikerPrice.innerText = element.strikedoffprice;
+            offShow.innerText = element.off;
+
+            productImage.appendChild(img);
+            productTitle.appendChild(title);
+            productTitle.appendChild(category);
+            productTitle.appendChild(pricing);
+            productTitle.appendChild(remove);
+
+            incrementDIV.appendChild(increment);
+            currentValue.appendChild(current);
+            decrementDiv.appendChild(decrement);
+            quantityDiv.appendChild(incrementDIV);
+            quantityDiv.appendChild(currentValue);
+            quantityDiv.appendChild(decrementDiv);
+
+            productThird.appendChild(PriceShow);
+            productThird.appendChild(StrikerPrice);
+            productThird.appendChild(offShow);
+            productsecond.appendChild(quantityDiv);
+            productfirst.appendChild(productImage);
+            productfirst.appendChild(productTitle);
+
+            ProductDiv.appendChild(productfirst);
+            ProductDiv.appendChild(productsecond);
+            ProductDiv.appendChild(productThird);
+
+            showcartProduct.appendChild(ProductDiv);
+            var priceString = element.price.replace(/[^0-9]/g, "");
+            var productPrice = parseInt(priceString);
+            cartTotal += productPrice;
+
+            remove.addEventListener("click", function () {
+                var selectProduct = this.parentElement.parentElement.parentElement;
+                selectProduct.remove();
+                var productName = element.name;
+                removeFromLocalStorage(productName);
+                updateTotal(-productPrice);
+            })
+
+            incrementDIV.addEventListener("click", function () {
+                count++;
+                current.innerText = count;
+                updateTotal(+productPrice);
+            })
+            decrementDiv.addEventListener("click", function () {
+                count--;
+                current.innerText = count;
+                updateTotal(-productPrice);
+            })
+            totacartPrice.innerText = "₹ " + cartTotal;
+            orderValue = cartTotal;
+
+            function updateTotal(itemPrice) {
+                cartTotal += itemPrice;
+                totacartPrice.innerText = "₹ " + cartTotal;
+                orderValue = cartTotal;
+            }
+            function removeFromLocalStorage(productName) {
+                var CartDATA = JSON.parse(localStorage.getItem("cart")) || [];
+                var updatedCart = CartDATA.filter(item => item.name !== productName);
+                localStorage.setItem("cart", JSON.stringify(updatedCart));
+            }
+        });
+    }
+
+    var couponBtn = document.querySelector("#coupensubmitBtn");
+    var coupenOutput = document.querySelector("#coupenOutput");
+    var coupenSuccess = document.createElement("p");
+    coupenSuccess.setAttribute("id", "coupenSuccess");
+    var coupenWrong = document.createElement("p");
+    coupenWrong.setAttribute("id", "coupenWrong")
+
+    couponBtn.addEventListener("click", function () {
+        var coupen = document.querySelector("#Entercoupen").value;
+        var off = Math.floor(cartTotal * 0.5);
+        coupenWrong.innerText = "";
+        coupenSuccess.innerText = "";
+        if (coupen === "Raghav") {
+            var newCartValue = cartTotal - off;
+            orderValue = newCartValue;
+            totacartPrice.innerText = "₹ " + newCartValue;
+            coupenSuccess.innerText = "You Saved " + off + "₹ With This Coupon"
+            coupenOutput.appendChild(coupenSuccess)
+        } else {
+            coupenWrong.innerText = "Wrong Coupon";
+            coupenOutput.appendChild(coupenWrong);
+        }
+
+    })
+    var confirmOrderButtons = document.querySelectorAll(".ConfirmOrderBTN");
+
+    confirmOrderButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            localStorage.setItem("OrderValue", orderValue);
+            window.location.href = "checkout.html";
+        });
+    });
+</script>
+
+</html>
