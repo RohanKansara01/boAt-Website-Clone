@@ -14,8 +14,8 @@ function displayProducts(data) {
     parent.innerHTML = "";
     var outOfStock = document.querySelector("#ifOutOfStock")
     outOfStock.innerHTML = ""
-    
-    if(data.length === 0){
+
+    if (data.length === 0) {
         var noProduct = document.createElement("h2");
         noProduct.setAttribute("class", "noProductAvl");
         noProduct.innerText = "We are currently out of stock in this category";

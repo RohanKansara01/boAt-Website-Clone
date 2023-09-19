@@ -1,0 +1,131 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#productNameDiv{
+    width: 100%;
+    padding: 40px 0px;
+}
+#productNameDivInner{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#productNameDivInner h2{
+    font-size: 30px;
+    padding: 10px 0px;
+}
+#productNameDivInner p{
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+#productFirsrtDetailDiv{
+    width: 100%;
+    display: flex;
+}
+#productdiv1{
+    background: linear-gradient(to top,#a50921,#ed1d26)!important;
+    width: 50%;
+    padding: 0px 40px;
+}
+.imageTrasition{
+    opacity: 1;
+    text-align: center;
+    transform: translateZ(0) scale(1);
+}
+.imageTrasition img{
+    max-width: 50%;
+    margin: 0 auto;
+}
+.detailsTitle{
+    margin: 40px 20px;
+    color: #Ffffff;
+    font-size: 30px;
+}
+.detailspara{
+    margin: 20px 20px;
+    color: #Ffffff;
+    font-size: 15px;
+    font-weight: 300;
+}
+#productdiv2{
+    background: linear-gradient(to top,#292929,#212121)!important;
+    width: 50%;
+    padding: 30px 40px 0px 40px;
+}
+#productsecondDetaildiv{
+    width: 100%;
+    background: linear-gradient(to top,#a50921,#ed1d26)!important;
+    display: flex;
+    align-items: center;
+}
+#productsecondDetaildiv>div{
+    width: 50%;
+}
+#specificationDiv{
+    background-image: linear-gradient(to top,#7e0003,rgba(110,1,1,0)),linear-gradient(to bottom,#590000,#590000)!important;
+    width: 100%;
+    padding: 0px 40px;
+    display: flex;
+    align-items: center
+}
+#specificationDiv1{
+    padding: 0px 50px;
+}
+#specificationDiv1>div{
+    background-color: #000000;
+    padding: 20px 40px;
+}
+#specificationDiv1>div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+#specificationDiv2{
+    width: 50%;
+}
+#productthirdDetaildiv{
+    width: 100%;
+    display: flex;
+}
+#productthirdDetaildiv1{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to top, #292929, #212121);
+    padding: 40px 40px 40px 0px;
+}
+#productthirdDetaildiv1child1{
+    width: 40%;
+}
+#productthirdDetaildiv1child1 img{
+    width: 100%;
+}
+#productthirdDetaildiv1child2{
+    width: 60%;
+}
+#productthirdDetaildiv2{
+    width: 25%;
+    background-color: #3c3c3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#FAQdiv{
+    width: 50%;
+    margin: auto;
+}
+#FAQdiv h4 {
+    font-style: italic;
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.ans {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(172, 168, 168);
+}
+  
