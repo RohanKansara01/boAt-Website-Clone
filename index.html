@@ -701,25 +701,25 @@
         <h4 class="h4footer">Shop</h4><br>
         <p class="pfooter">
             
-          Track Your Order<br><br>
-          Warranty & Support<br><br>
-          Return Policy<br><br>
-          Service Centers<br><br>
-          Bulk Orders<br><br>
-          FAQs<br><br>
-          Why Buy Direct<br><br>
+          Track Your Order<br>
+          Warranty & Support<br>
+          Return Policy<br>
+          Service Centers<br>
+          Bulk Orders<br>
+          FAQs<br>
+          Why Buy Direct<br>
         </p>
     </div>
     <div class="Chiled4footerDiv">
         <h4 class="h4footer">Company</h4>
         <p class="pfooter"><br>
-            News<br><br>
-            Read Our Blog<br><br>
-            Careers<br><br>
-            Security<br><br>
-            Investor Relations<br><br>
-            Social Responsibility<br><br>
-            Warranty Policy<br><br>
+            News<br>
+            Read Our Blog<br>
+            Careers<br>
+            Security<br>
+            Investor Relations<br>
+            Social Responsibility<br>
+            Warranty Policy<br>
             About boAt
         </p>
     </div>
@@ -1047,6 +1047,23 @@
 
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+  document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide',{
+      perPage : 1,
+      perMove : 1,
+      type : 'loop',
+      drag : 'free',
+      autoplay : true,
+      snap : true,
+      arrows : true,
+      pagination : true,
+    });
+    splide.mount();
+  } );
+</script>
+
 
 <script>
   var coll = document.getElementsByClassName("collapse-menu");
@@ -1065,22 +1082,7 @@
   }
   </script>
 <script src="./footer.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<script>
-  document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide',{
-      perPage : 1,
-      perMove : 1,
-      type : 'loop',
-      drag : 'free',
-      autoplay : true,
-      snap : true,
-      arrows : true,
-      pagination : true,
-    });
-    splide.mount();
-  } );
-</script>
+
 
 <script>
   document.querySelector(".button").addEventListener("click",

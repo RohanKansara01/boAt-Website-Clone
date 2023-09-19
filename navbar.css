@@ -432,8 +432,8 @@ font-size: 12px;
         display: none;
     }
   }
-  @media(max-width:760px){
-    /* .topDiv{
+  @media(max-width:660px){
+    .topDiv{
         display: none;
-    } */
+    }
   }
