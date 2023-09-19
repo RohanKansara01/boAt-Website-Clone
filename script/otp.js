@@ -33,14 +33,14 @@ function checkOtp() {
     var input = form.querySelector("#otpInput").value;
     
     if (input === "") {
-        wrongotp.style.color="red"
+        wrongotp.style.color="black"
         wrongotp.innerText = "Enter otp"
     } else if (input === otp) {
         
         window.location.href = "signin.html";
     } else {
-        wrongotp.style.color="red"
-        wrongotp.innerText = "Invalid otp"
+        wrongotp.style.color="black"
+        wrongotp.innerText = "Invalid otp !!!"
     }
 }
 function closeModal() {
