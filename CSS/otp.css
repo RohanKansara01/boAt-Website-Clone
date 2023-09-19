@@ -1,4 +1,6 @@
-
+*{
+    font-family: 'Poppins', sans-serif;
+}
 #firstChildDiv {
     position: relative;
 }
@@ -22,7 +24,7 @@
     align-items: center;
     /* border: 2px solid black; */
     margin: 0px;
-    height: 803px;
+    height: 600px;
 }
 #firstChildDiv{
     /* margin-right: 110px; */
@@ -80,7 +82,7 @@ strong{
     /* border: 0px; */
 }
 button{
-    margin-top: 30px;
+    /* margin-top: 30px; */
     width: 170px;
     height: 30px;
 }
@@ -107,7 +109,7 @@ h4{
     mix-blend-mode:color-burn;
     width: 200px;
 }
-*{
+/* *{
     padding: 0px;
     margin: 0px;
-}
+} */

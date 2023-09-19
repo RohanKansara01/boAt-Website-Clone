@@ -6,7 +6,9 @@
 
 
 } */
-
+*{
+    font-family: 'Poppins', sans-serif;
+}
 
 #main{
     display: flex;
