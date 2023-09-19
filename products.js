@@ -146,6 +146,7 @@ function displayProducts(data) {
         })
         productDiv.addEventListener("click", function(){
             localStorage.setItem("product", JSON.stringify(element));
+            window.location.href = "singleproduct.html";
         })
     });
 }

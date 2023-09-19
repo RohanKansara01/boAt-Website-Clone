@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boat-lifestyle.com- Sign In</title>
+    <title>Sign In</title>
     <link rel="stylesheet" href="./CSS/signin.css" />
     <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="./navbar.css">
@@ -532,33 +532,35 @@
 </html>
 <script src="./script/signin.js"></script>
 <script>
-    var coll = document.getElementsByClassName("collapse-menu");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
-    </script>
-  <script src="./footer.js"></script>
-  <script>
-    document.querySelector(".button").addEventListener("click",
-    function (){
-        // var target=event.target
-        target=event.preventDefault()
-        var val=document.querySelector(".searchBar").value
-        if(val==="earbuds"){
-            window.location.href="https://www.boat-lifestyle.com/products/airdopes-131"
-        }else if(val==="headphones"){
-            window.location.href="https://www.boat-lifestyle.com/products/airdopes-131"
-        }
-        console.log(val)
-    })
+  var coll = document.getElementsByClassName("collapse-menu");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
   </script>
+<script src="./footer.js"></script>
+
+
+<script>
+  document.querySelector(".button").addEventListener("click",
+  function (){
+      // var target=event.target
+      target=event.preventDefault()
+      var val=document.querySelector(".searchBar").value
+      if(val==="earbuds"){
+          window.location.href="/products.html"
+      }else if(val==="headphones"){
+          window.location.href="/products.html"
+      }
+      console.log(val)
+  })
+</script>

@@ -2,7 +2,6 @@
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 #productNameDiv {
@@ -249,6 +248,7 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    box-sizing: border-box;
 }
 .imgDiv{
     width: 50%;
@@ -260,6 +260,7 @@
 }
 .detailDIV{
     width: 50%;
+    box-sizing: border-box;
 }
 .ratingDiv {
     display: flex;
@@ -414,12 +415,6 @@
     }
     .detailDIV{
         padding: 20px 40px;
-        width: 100%;
-    }
-    .addToCartBtn{
-        width: 100%;
-    }
-    .useCoupen{
         width: 100%;
     }
 }
