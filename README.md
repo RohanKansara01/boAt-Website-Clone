@@ -30,3 +30,7 @@ Narsimma - Payment Page, Footer and functionality of Sign in, Sign up and Otp pa
 # Project Description:-
 An innovative web development project called "boAt Clone Website Project" aims to imitate the user-friendly and fashionable look of the official website for the well-known boAt brand. This project aims to deliver a comparable online buying experience for audio items including speakers, headphones, and earbuds. Our objective is to provide customers with an alternative platform where they can research, evaluate, and buy high-quality audio equipment through thorough design and functionality emulation. Despite being an individual initiative that takes inspiration from boAt, it guarantees accessibility, authenticity, and client happiness. Keep checking back as we develop an engaging and smooth online purchasing destination for audio fans.
 
+# Website Screenshots:-
+
+Homepage Screensots:-
+<img src="shivering-need-4074\Website Screenshots\boat homepage 1.PNG" alt="Homepage Screenshot 1">
