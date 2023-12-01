@@ -36,5 +36,5 @@ Homepage Screensots:-
 <!-- <p align="center">
 <img src="/shivering-need-4074/Website_Screenshots/boat_homepage_1.PNG" width="350" alt="Homepage Screenshot 1">
 </p> -->
-![image description](shivering-need-4074\Website_Screenshots\boat_homepage_1.PNG)
+<!-- ![image description](shivering-need-4074\Website_Screenshots\boat_homepage_1.PNG) -->
 ![Alt text](Website_Screenshots/boat_homepage_1.PNG)
