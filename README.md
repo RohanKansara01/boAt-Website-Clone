@@ -33,4 +33,6 @@ An innovative web development project called "boAt Clone Website Project" aims t
 # Website Screenshots:-
 
 Homepage Screensots:-
+<p>
 <img src="/shivering-need-4074/Website_Screenshots/boat_homepage_1.PNG" width="350" alt="Homepage Screenshot 1">
+</p>
