@@ -33,8 +33,4 @@ An innovative web development project called "boAt Clone Website Project" aims t
 # Website Screenshots:-
 
 Homepage Screensots:-
-<!-- <p align="center">
-<img src="/shivering-need-4074/Website_Screenshots/boat_homepage_1.PNG" width="350" alt="Homepage Screenshot 1">
-</p> -->
-<!-- ![image description](shivering-need-4074\Website_Screenshots\boat_homepage_1.PNG) -->
-![Alt text](Website_Screenshots/boat_homepage_1.PNG)
+![boat_homepage_1](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/e8bc2d0f-ed6c-4c55-a506-9500ca0d2b1d)
