@@ -34,3 +34,23 @@ An innovative web development project called "boAt Clone Website Project" aims t
 
 Homepage Screensots:-
 ![boat_homepage_1](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/e8bc2d0f-ed6c-4c55-a506-9500ca0d2b1d)
+![boat_homepage_2](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/f4bf172a-9b1e-45e5-aff6-11eb389c2a94)
+![boat_homepage_responsiveness](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/6c95ecb3-4b47-464a-b8a3-873cdb553f27)
+
+Login and SignUp Page Screenshots:-
+![login_page](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/059915e0-526f-4b50-b22e-659b00576ead)
+![sign_up_page](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/ccdd1e8d-8cf5-41f7-93f0-cd61fde61d32)
+
+Product Page Screenshot:-
+![product_page](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/a4c2abfc-3489-41a2-a6ff-0f1010cd5b4d)
+![product_page_responsiveness](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/7f636fd2-a116-4f45-83b3-fb7517a415b3)
+![product_details_page](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/4a1886e1-1bfc-45a5-9667-46a4e9ff722d)
+![product_details_page_responsiveness](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/4fd93918-f0b3-4f80-85fb-70d547afc498)
+
+Cart Page Screenshots:-
+![cart_page](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/8995ce90-c428-4c2a-9030-b331a603b842)
+![cart_page_responsiveness](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/152a9adf-3e26-42c6-9d56-f8e15f58b410)
+
+Checkout Page Screenshots:-
+![checkout_page](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/d4d3d1aa-ca32-4af1-b62f-85a6f8c9eb03)
+![checkout_page_responsiveness](https://github.com/RohanKansara01/boAt-Website-Clone/assets/142526317/9561a395-19e8-460a-b9f8-8b8636db51b5)
